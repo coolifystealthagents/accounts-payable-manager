@@ -1,0 +1,74 @@
+{
+  "blogs": [
+    {
+      "slug": "vendor-invoice-receipt-custody",
+      "title": "Preserve Custody From Vendor Invoice Receipt to Entry"
+    },
+    {
+      "slug": "vendor-master-change-evidence",
+      "title": "Control Vendor Master Changes With Evidence"
+    },
+    {
+      "slug": "three-way-match-exception-queue",
+      "title": "Build a Three-Way Match Exception Queue"
+    },
+    {
+      "slug": "payment-run-preparation-checklist",
+      "title": "Create a Payment Run Preparation Checklist"
+    },
+    {
+      "slug": "duplicate-payment-candidate-routing",
+      "title": "Route Duplicate Payment Candidates for Review"
+    },
+    {
+      "slug": "invoice-approval-aging-register",
+      "title": "Maintain an Invoice Approval Aging Register"
+    },
+    {
+      "slug": "credit-note-application-handoff",
+      "title": "Design Credit Note Application Handoffs"
+    },
+    {
+      "slug": "purchase-order-exhaustion-alerts",
+      "title": "Track Purchase Order Exhaustion Without Guesswork"
+    },
+    {
+      "slug": "supplier-statement-reconciliation-log",
+      "title": "Build a Supplier Statement Reconciliation Log"
+    },
+    {
+      "slug": "bank-detail-change-boundaries",
+      "title": "Keep Bank Detail Decisions Outside Administrative Support"
+    },
+    {
+      "slug": "ap-system-outage-reconciliation",
+      "title": "Reconcile Payable Activity After a System Outage"
+    },
+    {
+      "slug": "invoice-dispute-intake-routing",
+      "title": "Route Vendor Invoice Disputes to Accountable Owners"
+    }
+  ],
+  "research": [
+    {
+      "slug": "invoice-match-completeness-methods",
+      "title": "Methods for Measuring Invoice Match Completeness"
+    },
+    {
+      "slug": "payment-approval-cycle-analysis",
+      "title": "Evidence-Based Analysis of Payment Approval Cycles"
+    },
+    {
+      "slug": "duplicate-payment-control-sampling",
+      "title": "Sample Design for Duplicate Payment Control Reviews"
+    },
+    {
+      "slug": "vendor-master-data-provenance",
+      "title": "Data Provenance Controls for Vendor Master Records"
+    },
+    {
+      "slug": "supplier-statement-reconciliation-methods",
+      "title": "Methods for Reviewing Supplier Statement Reconciliations"
+    }
+  ]
+}

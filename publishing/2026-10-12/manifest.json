@@ -1,0 +1,119 @@
+{
+  "site": "AccountsPayableManager",
+  "domain": "accountspayablemanager.com",
+  "canonicalOrigin": "https://accountspayablemanager.com",
+  "repository": "coolifystealthagents/accounts-payable-manager",
+  "branch": "main",
+  "publicationDate": "2026-10-12",
+  "blog": [
+    {
+      "slug": "vendor-invoice-receipt-custody",
+      "title": "Preserve Custody From Vendor Invoice Receipt to Entry",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/vendor-invoice-receipt-custody.webp"
+    },
+    {
+      "slug": "vendor-master-change-evidence",
+      "title": "Control Vendor Master Changes With Evidence",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/vendor-master-change-evidence.webp"
+    },
+    {
+      "slug": "three-way-match-exception-queue",
+      "title": "Build a Three-Way Match Exception Queue",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/three-way-match-exception-queue.webp"
+    },
+    {
+      "slug": "payment-run-preparation-checklist",
+      "title": "Create a Payment Run Preparation Checklist",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/payment-run-preparation-checklist.webp"
+    },
+    {
+      "slug": "duplicate-payment-candidate-routing",
+      "title": "Route Duplicate Payment Candidates for Review",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/duplicate-payment-candidate-routing.webp"
+    },
+    {
+      "slug": "invoice-approval-aging-register",
+      "title": "Maintain an Invoice Approval Aging Register",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/invoice-approval-aging-register.webp"
+    },
+    {
+      "slug": "credit-note-application-handoff",
+      "title": "Design Credit Note Application Handoffs",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/credit-note-application-handoff.webp"
+    },
+    {
+      "slug": "purchase-order-exhaustion-alerts",
+      "title": "Track Purchase Order Exhaustion Without Guesswork",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/purchase-order-exhaustion-alerts.webp"
+    },
+    {
+      "slug": "supplier-statement-reconciliation-log",
+      "title": "Build a Supplier Statement Reconciliation Log",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/supplier-statement-reconciliation-log.webp"
+    },
+    {
+      "slug": "bank-detail-change-boundaries",
+      "title": "Keep Bank Detail Decisions Outside Administrative Support",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/bank-detail-change-boundaries.webp"
+    },
+    {
+      "slug": "ap-system-outage-reconciliation",
+      "title": "Reconcile Payable Activity After a System Outage",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/ap-system-outage-reconciliation.webp"
+    },
+    {
+      "slug": "invoice-dispute-intake-routing",
+      "title": "Route Vendor Invoice Disputes to Accountable Owners",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/invoice-dispute-intake-routing.webp"
+    }
+  ],
+  "research": [
+    {
+      "slug": "invoice-match-completeness-methods",
+      "title": "Methods for Measuring Invoice Match Completeness",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/invoice-match-completeness-methods.webp",
+      "sourceCount": 10
+    },
+    {
+      "slug": "payment-approval-cycle-analysis",
+      "title": "Evidence-Based Analysis of Payment Approval Cycles",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/payment-approval-cycle-analysis.webp",
+      "sourceCount": 10
+    },
+    {
+      "slug": "duplicate-payment-control-sampling",
+      "title": "Sample Design for Duplicate Payment Control Reviews",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/duplicate-payment-control-sampling.webp",
+      "sourceCount": 10
+    },
+    {
+      "slug": "vendor-master-data-provenance",
+      "title": "Data Provenance Controls for Vendor Master Records",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/vendor-master-data-provenance.webp",
+      "sourceCount": 10
+    },
+    {
+      "slug": "supplier-statement-reconciliation-methods",
+      "title": "Methods for Reviewing Supplier Statement Reconciliations",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/supplier-statement-reconciliation-methods.webp",
+      "sourceCount": 10
+    }
+  ]
+}
