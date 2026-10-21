@@ -19,6 +19,7 @@ layout = read("app/layout.tsx")
 service_page = read("app/services/[slug]/page.tsx")
 blog_page = read("app/blog/[slug]/page.tsx")
 research_page = read("app/research/[slug]/page.tsx")
+canonical_proxy = read("proxy.ts")
 
 contracts = {
     "lead posts to protected endpoint": "fetch('/api/submit-lead'" in lead,
@@ -43,6 +44,16 @@ contracts = {
     "service template contains workflow, controls, boundaries, examples and FAQs": all(token in service_page for token in ("workflow", "controls", "boundaries", "scenarios", "faqs")),
     "blog template uses generated TOC sidebar": "ArticleSidebar" in blog_page and "tocItems" in blog_page,
     "research template uses generated TOC sidebar": "ArticleSidebar" in research_page and "tocItems" in research_page,
+    "canonical proxy uses fixed production allowlist and preserves path and query": all(token in canonical_proxy for token in (
+        'const CANONICAL_ORIGIN = "https://accountspayablemanager.com"',
+        '"www.accountspayablemanager.com"',
+        'destination.pathname = `/${request.nextUrl.pathname.replace(/^\\/+/, "")}`',
+        'destination.search = request.nextUrl.search',
+        '"cf-visitor"',
+        '"x-forwarded-proto"',
+        'NextResponse.redirect',
+        '308',
+    )),
     "design registry exists": (ROOT / "design-registry.json").is_file(),
     "every route renderer exposes the shared skip target": all('id="main-content"' in read(path) for path in (
         "components/Marketing.tsx", "app/about/page.tsx", "app/blog/page.tsx", "app/blog/[slug]/page.tsx",
