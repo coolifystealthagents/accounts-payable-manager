@@ -47,8 +47,8 @@ contracts = {
     "canonical proxy uses fixed production allowlist and preserves path and query": all(token in canonical_proxy for token in (
         'const CANONICAL_ORIGIN = "https://accountspayablemanager.com"',
         '"www.accountspayablemanager.com"',
-        'request.nextUrl.pathname',
-        'request.nextUrl.search',
+        'destination.pathname = `/${request.nextUrl.pathname.replace(/^\\/+/, "")}`',
+        'destination.search = request.nextUrl.search',
         '"cf-visitor"',
         '"x-forwarded-proto"',
         'NextResponse.redirect',

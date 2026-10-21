@@ -35,10 +35,10 @@ export function proxy(request: NextRequest) {
   if (!PRODUCTION_HOSTS.has(host)) return NextResponse.next();
 
   if (host !== "accountspayablemanager.com" || forwardedScheme(request) !== "https") {
-    return NextResponse.redirect(
-      new URL(`${request.nextUrl.pathname}${request.nextUrl.search}`, CANONICAL_ORIGIN),
-      308,
-    );
+    const destination = new URL(CANONICAL_ORIGIN);
+    destination.pathname = `/${request.nextUrl.pathname.replace(/^\/+/, "")}`;
+    destination.search = request.nextUrl.search;
+    return NextResponse.redirect(destination, 308);
   }
 
   return NextResponse.next();
