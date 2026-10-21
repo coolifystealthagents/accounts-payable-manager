@@ -87,7 +87,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use an owner-approved risk cadence and review again after changes to systems, policy, volume, suppliers, or responsibilities."
       }
     ],
-    "internalService": "/services/invoice-processing",
+    "internalService": "/services/invoice-intake",
     "internalSibling": "/blog/vendor-master-change-evidence",
     "source": {
       "label": "GAO Green Book",
@@ -181,7 +181,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use an owner-approved risk cadence and review again after changes to systems, policy, volume, suppliers, or responsibilities."
       }
     ],
-    "internalService": "/services/invoice-processing",
+    "internalService": "/services/invoice-intake",
     "internalSibling": "/blog/three-way-match-exception-queue",
     "source": {
       "label": "GAO Green Book",
@@ -275,7 +275,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use an owner-approved risk cadence and review again after changes to systems, policy, volume, suppliers, or responsibilities."
       }
     ],
-    "internalService": "/services/invoice-processing",
+    "internalService": "/services/invoice-intake",
     "internalSibling": "/blog/payment-run-preparation-checklist",
     "source": {
       "label": "GAO Green Book",
@@ -369,7 +369,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use an owner-approved risk cadence and review again after changes to systems, policy, volume, suppliers, or responsibilities."
       }
     ],
-    "internalService": "/services/invoice-processing",
+    "internalService": "/services/invoice-intake",
     "internalSibling": "/blog/duplicate-payment-candidate-routing",
     "source": {
       "label": "GAO Green Book",
@@ -463,7 +463,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use an owner-approved risk cadence and review again after changes to systems, policy, volume, suppliers, or responsibilities."
       }
     ],
-    "internalService": "/services/invoice-processing",
+    "internalService": "/services/invoice-intake",
     "internalSibling": "/blog/invoice-approval-aging-register",
     "source": {
       "label": "GAO Green Book",
@@ -557,7 +557,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use an owner-approved risk cadence and review again after changes to systems, policy, volume, suppliers, or responsibilities."
       }
     ],
-    "internalService": "/services/invoice-processing",
+    "internalService": "/services/invoice-intake",
     "internalSibling": "/blog/credit-note-application-handoff",
     "source": {
       "label": "GAO Green Book",
@@ -651,7 +651,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use an owner-approved risk cadence and review again after changes to systems, policy, volume, suppliers, or responsibilities."
       }
     ],
-    "internalService": "/services/invoice-processing",
+    "internalService": "/services/invoice-intake",
     "internalSibling": "/blog/purchase-order-exhaustion-alerts",
     "source": {
       "label": "GAO Green Book",
@@ -745,7 +745,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use an owner-approved risk cadence and review again after changes to systems, policy, volume, suppliers, or responsibilities."
       }
     ],
-    "internalService": "/services/invoice-processing",
+    "internalService": "/services/invoice-intake",
     "internalSibling": "/blog/supplier-statement-reconciliation-log",
     "source": {
       "label": "GAO Green Book",
@@ -839,7 +839,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use an owner-approved risk cadence and review again after changes to systems, policy, volume, suppliers, or responsibilities."
       }
     ],
-    "internalService": "/services/invoice-processing",
+    "internalService": "/services/invoice-intake",
     "internalSibling": "/blog/bank-detail-change-boundaries",
     "source": {
       "label": "GAO Green Book",
@@ -933,7 +933,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use an owner-approved risk cadence and review again after changes to systems, policy, volume, suppliers, or responsibilities."
       }
     ],
-    "internalService": "/services/invoice-processing",
+    "internalService": "/services/invoice-intake",
     "internalSibling": "/blog/ap-system-outage-reconciliation",
     "source": {
       "label": "GAO Green Book",
@@ -1027,7 +1027,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use an owner-approved risk cadence and review again after changes to systems, policy, volume, suppliers, or responsibilities."
       }
     ],
-    "internalService": "/services/invoice-processing",
+    "internalService": "/services/invoice-intake",
     "internalSibling": "/blog/invoice-dispute-intake-routing",
     "source": {
       "label": "GAO Green Book",
@@ -1121,7 +1121,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use an owner-approved risk cadence and review again after changes to systems, policy, volume, suppliers, or responsibilities."
       }
     ],
-    "internalService": "/services/invoice-processing",
+    "internalService": "/services/invoice-intake",
     "internalSibling": "/blog/vendor-invoice-receipt-custody",
     "source": {
       "label": "GAO Green Book",
