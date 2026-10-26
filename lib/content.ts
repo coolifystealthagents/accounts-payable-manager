@@ -3,8 +3,10 @@ import type { BlogPost, ResearchPost } from './types';
 import { october12BlogPosts } from './october12-blog';
 import { october12ResearchPosts } from './october12-research';
 import { october22BlogPosts } from './october22-blog';
+import { october26BlogPosts } from './october26-blog';
 import { october25BlogPosts } from './october25-blog';
 import { october22ResearchPosts } from './october22-research';
+import { october26ResearchPosts } from './october26-research';
 import { october25ResearchPosts } from './october25-research';
 
 const legacyBlogPosts: BlogPost[] = [
