@@ -3,7 +3,9 @@ import type { BlogPost, ResearchPost } from './types';
 import { october12BlogPosts } from './october12-blog';
 import { october12ResearchPosts } from './october12-research';
 import { october22BlogPosts } from './october22-blog';
+import { october25BlogPosts } from './october25-blog';
 import { october22ResearchPosts } from './october22-research';
+import { october25ResearchPosts } from './october25-research';
 
 const legacyBlogPosts: BlogPost[] = [
   {
@@ -915,8 +917,8 @@ const legacyResearchPosts: ResearchPost[] = [
   }
 ];
 
-export const blogPosts: BlogPost[] = [...october22BlogPosts, ...october12BlogPosts, ...legacyBlogPosts];
-export const researchPosts: ResearchPost[] = [...october22ResearchPosts, ...october12ResearchPosts, ...legacyResearchPosts];
+export const blogPosts: BlogPost[] = [...october25BlogPosts, ...october22BlogPosts, ...october12BlogPosts, ...legacyBlogPosts];
+export const researchPosts: ResearchPost[] = [...october25ResearchPosts, ...october22ResearchPosts, ...october12ResearchPosts, ...legacyResearchPosts];
 
 export const nav = [
   { href: '/services', label: 'Services' },
