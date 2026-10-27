@@ -15,18 +15,18 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Research question and scope",
         "paragraphs": [
           "This protocol asks how the 1099 record can be described from the operational record in accounts payable operations. It is a measurement method, not a performance score or a legal conclusion.",
-          "The scope is one defined population and one observation window. State what is excluded before looking at results so the denominator cannot drift.",
+          "The AP scope is one defined supplier population and one observation window; state exclusions before looking at results so the denominator cannot drift.",
           "The method does not estimate an industry rate and does not compare staffing models. It produces a repeatable description that the AP manager can review.",
           "Write the next action as a sentence with an owner and a time. A vague request to review the 1099 record exception is not a next action; a named person, a specific check, and a deadline is.",
-          "Use a dated note for every owner decision. An approval that exists only in a meeting is difficult to reconstruct and easy to misremember."
+          "Use a dated note for every AP-manager decision; an approval that exists only in a meeting is hard to reconstruct and easy to misremember."
         ]
       },
       {
         "heading": "Population and unit of analysis",
         "paragraphs": [
           "The unit is one case involving the 1099 record, from the opening event through the recorded close. Keep the unit explicit so linked events are not counted as independent cases.",
-          "Record the opening count, additions, withdrawals, resolutions, and unresolved items at the end of the window. A count without a denominator is not a measurement.",
-          "Exclude reopened cases only when the reopening did not create a new requirement. Preserve the exclusion count and the reason.",
+          "Record opening invoice cases, additions, withdrawals, resolutions, and unresolved items; a count without that denominator is not a payment measure.",
+          "Exclude a reopened invoice case only when the reopening did not create a new payment requirement; preserve the count and reason.",
           "Keep the 1099 record queue separate from the general inbox. A shared queue without a named owner hides the oldest item and makes the weekly report look cleaner than the work.",
           "Keep the 1099 record source link durable. A screenshot may be useful for a quick review, but the link or record identifier is what lets the next person verify the value."
         ]
@@ -34,29 +34,29 @@ export const october26ResearchPosts: ResearchPost[] = [
       {
         "heading": "Definitions that make the measure reproducible",
         "paragraphs": [
-          "Write down the start event, the stop event, the pause rule, and the treatment of missing evidence before collecting data.",
-          "Define the primary measure and one or two supporting measures. A measure without a stated denominator or observation window is not yet a measure.",
-          "If a definition changes during the review, keep the earlier classification and apply the new rule only to later cases.",
-          "When a source is unavailable, record that fact instead of leaving the field blank. Missing, unavailable, and confirmed negative are three different states and should not be collapsed.",
-          "Name the point where the VA must stop and route. A boundary that says use judgment is not a boundary; it is a request for the VA to guess."
+          "Write down the AP protocol's start event, stop event, pause rule, and treatment of missing evidence before collecting invoice data.",
+          "Define one primary AP measure, such as first-pass invoice approval, plus one supporting measure; a measure without a denominator or observation window is not ready.",
+          "If an AP definition changes during the review, keep earlier invoice classifications and apply the new rule only to later cases.",
+          "When an AP source is unavailable, record that fact instead of leaving the field blank; missing, unavailable, and confirmed negative are three different states.",
+          "Name the point where the AP associate must stop and route; a boundary that says use judgment asks the associate to guess about payment or bank changes."
         ]
       },
       {
         "heading": "Evidence standard and data dictionary",
         "paragraphs": [
-          "Each case needs the source, the observation time, the field it supports, and the reviewer. Mark missing, unavailable, and confirmed negative values separately.",
-          "Use a pseudonymous case key. Keep the crosswalk between the key and the identity in an approved system with restricted access.",
-          "Record the version or date of every source. A current screenshot cannot prove what the record said when the first action was taken.",
+          "Each AP case needs the invoice source, observation time, field supported, and reviewer; mark missing, unavailable, and confirmed-negative values separately.",
+          "Use a pseudonymous invoice key and keep the supplier identity crosswalk in an approved system with restricted access.",
+          "Record the version or date of every vendor master, invoice, or remittance source; a current screenshot cannot prove what the record said earlier.",
           "Use a short reason code for every exception on the 1099 record. The code should describe the evidence problem, not the person who found it.",
-          "Check the destination, not only the activity. A payment marked sent, a schedule marked changed, or an access request marked complete should be verified in the system that owns the result."
+          "Verify the payment destination rather than the activity: a payment marked sent, a vendor record marked changed, or a hold marked released should be confirmed in the ledger that owns the result."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Use consecutive cases where possible, then stratify by channel, owner, or risk class. Convenience samples hide the cases that fail the control.",
-          "Include adverse cases: a missing source, a conflicting instruction, an unavailable owner, and a tight deadline. These cases show whether the process stops safely.",
-          "Record the collection window, the eligible count, the sample size, and every exclusion. The reviewer should be able to reproduce the sample.",
+          "Use consecutive invoice cases where possible, then stratify by supplier, payment channel, or risk class; convenience samples hide the exceptions that fail the control.",
+          "Include missing invoices, conflicting supplier instructions, unavailable approvers, and tight payment-run deadlines in the AP sample.",
+          "Record the AP collection window, eligible invoice count, sample size, and every exclusion so another reviewer can reproduce the sample.",
           "Review one case involving the 1099 record end to end in the weekly meeting. Check the source, the decision, the destination record, and the confirmation rather than only the completion count.",
           "Record the reason for a reopened case involving the 1099 record. The reason is evidence about the first close and should be used to improve the close rule."
         ]
@@ -64,45 +64,45 @@ export const october26ResearchPosts: ResearchPost[] = [
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Report the eligible count, the sample, the missing-field rate, the exception rate, and the unresolved count at the close of the window.",
-          "Separate observation from interpretation. A high completion rate on a small easy sample is not evidence of a strong control.",
-          "Keep the case-level detail available for review. Summary charts without the underlying records cannot support a decision.",
+          "Report the eligible invoice count, sample, missing-field rate, exception rate, and unresolved count at the close of the AP window.",
+          "Separate what the AP associate observed from what the manager inferred; a high approval rate on a small easy sample is not evidence of a strong control.",
+          "Keep case-level invoice, approval, and payment records available for review; a summary chart without the underlying AP records cannot support a decision.",
           "If the 1099 record rule changes, keep the earlier classification and apply the new rule to later cases. A definition that changes quietly makes the trend unreadable."
         ]
       },
       {
         "heading": "Limitations and sources of error",
         "paragraphs": [
-          "The record may be incomplete, delayed, or maintained by someone outside the team. The method cannot infer missing work from a clean summary.",
-          "Small samples are sensitive to one case. Report the instability instead of presenting a precise-looking percentage.",
-          "The cited public sources frame recordkeeping, privacy, security, and internal control practice. They do not provide a result for this sample.",
+          "The AP record may be incomplete, delayed, or maintained by procurement or treasury; the method cannot infer missing work from a clean payment summary.",
+          "Small AP samples are sensitive to one duplicate or one bank-change exception; report the instability instead of a precise-looking percentage.",
+          "Public recordkeeping, privacy, security, and internal-control guidance frames the AP review but does not provide a payment result for this sample.",
           "Keep a named backup for the 1099 record owner. Coverage during leave or a time-zone gap should be written into the routine, not improvised when the owner is unavailable."
         ]
       },
       {
         "heading": "Review cadence and next action",
         "paragraphs": [
-          "Set a review date and name the person who will read the result. A report without a review owner is an archive, not a control.",
+          "Set a review date and name the AP manager who will read the result; a report without a review owner is an archive, not a control.",
           "Choose one next action: fix the source, simplify the field, change the queue, or stop the work until the AP manager decides. Record the decision and the next check.",
-          "Repeat the protocol after the change. Compare the same definitions and report what moved, what did not, and what remains unknown.",
+          "Repeat the AP protocol after a change and report what moved, what did not, and what remains unknown.",
           "Do not copy a value from a prior record for the 1099 record because it looks familiar. Reopen the source, confirm the version, and record what changed."
         ]
       },
       {
         "heading": "Data quality checks",
         "paragraphs": [
-          "Check identifiers, timestamps, impossible sequences, duplicates, and edits made after observation. Automated checks find inconsistencies; a reviewer interprets the meaning.",
-          "Keep the raw extract and the cleaned version. If a value changes, record the change and the reason rather than overwriting the observation.",
-          "Test one case end to end before running the full sample. A failed dry run is cheaper than discovering a definition error after collection.",
+          "Check invoice numbers, timestamps, impossible duplicate sequences, and edits after the first observation; automated checks flag conflicts, and the AP reviewer interprets them.",
+          "Keep the raw invoice extract and the cleaned version; when a value changes, record the change and reason rather than overwriting the observation.",
+          "Test one vendor invoice end to end before running the full AP sample; a failed dry run is cheaper than discovering a definition error after collection.",
           "Close the loop with the person who raised the 1099 record issue. A record that is internally complete but never confirmed by the requester is only half closed."
         ]
       },
       {
         "heading": "Privacy, access, and retention",
         "paragraphs": [
-          "Collect the minimum fields needed for the question. Use named accounts, role-based access, masked identifiers, and an approved storage location.",
-          "Log access and set a disposal date. A research file that lives forever is a liability, not an archive.",
-          "Do not copy personal data into a chat or a personal drive to save time. If the approved system cannot support the review, narrow the review.",
+          "Collect only the fields the AP question needs; use named accounts, role-based access, masked bank details, and an approved storage location.",
+          "Log access to the AP dataset and set a disposal date; a vendor file that lives forever is a liability, not an archive.",
+          "Do not copy supplier bank details into a chat or personal drive; if the approved AP system cannot support the review, narrow the review.",
           "Separate the request from the decision. The requester can describe the urgency; only the named owner can approve an exception that changes the outcome of the 1099 record."
         ]
       },
@@ -110,17 +110,17 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Worked example of the record",
         "paragraphs": [
           "An item arrives with a source that is one version behind the current record for the 1099 record. The reviewer flags the version, keeps the item open, and asks one question. No one rebuilds the case from memory.",
-          "The corrected source arrives, the reviewer compares it with the prior value, and the owner accepts the next action. The record now shows why the delay occurred and what changed.",
-          "The example is deliberately ordinary. The value of the protocol is that the same evidence standard applies to a routine case, an exception, and a reopened item.",
-          "Put the evidence standard in the task template, not in a separate policy document. The person doing the work should see the required source, owner, and close condition at the point of action."
+          "When the corrected invoice or vendor source arrives, the AP reviewer compares it with the prior value and the manager accepts the next action; the record shows what changed.",
+          "The example is deliberately ordinary; the AP protocol matters because the same evidence standard applies to a routine invoice, an exception, and a reopened duplicate.",
+          "Put the AP evidence standard in the invoice task template, not a separate policy document; the associate should see the required source, owner, and close condition."
         ]
       },
       {
         "heading": "What would change the answer",
         "paragraphs": [
-          "A new system, a policy change, a different client mix, or a material shift in volume can make the result stale. Record those triggers with the finding.",
-          "Name the next review date and the owner. A protocol that is not revisited becomes an old opinion with a citation.",
-          "If the source changes but the definitions do not, preserve the earlier result and label the new window. Do not splice two periods into one trend.",
+          "Record the AP trigger that would make a vendor invoice measure stale: a new ERP, changed payment terms, a supplier mix shift, or a volume spike.",
+          "Name the next AP review date and owner; a protocol that is never revisited becomes an old opinion with a citation.",
+          "If the vendor source changes but the definition does not, preserve the earlier result and label the new observation window; do not splice periods.",
           "Make the 1099 record handoff visible in the record. A chat message can start the handoff, but the source, the open question, and the next owner belong with the case.",
           "Measure the age of the oldest open item for the 1099 record, not only the average. An average can improve while one case sits unresolved for weeks."
         ]
@@ -129,10 +129,10 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Reporting package and handoff",
         "paragraphs": [
           "Publish the question, population, window, definitions, case flow, counts, unresolved items, disagreement summary, and limits together.",
-          "Leave the protocol, codebook, sample file, and open items in one place. A reviewer who did not run the first pass should be able to repeat the method.",
-          "Assign one owner for the protocol and one custodian for the data. Record the disposal date and the access list.",
+          "Leave the AP protocol, codebook, sample file, and open items in one folder so another reviewer can repeat the method.",
+          "Name one owner for the AP control and one custodian for the invoice extract; record the retention date and who can access the vendor master and payment files.",
           "Record the exact source for the 1099 record and the time it was observed. A later reviewer should be able to tell whether the value was current when the first action was taken, even if the record has changed since.",
-          "When a reviewer finds a defect, ask whether the template allowed it. If the same field is missed twice, the form or the instruction is part of the cause."
+          "When an AP reviewer finds a defect, ask whether the invoice template allowed it; if the same field is missed twice, the form or instruction is part of the cause."
         ]
       }
     ],
@@ -191,18 +191,18 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Research question and scope",
         "paragraphs": [
           "This protocol asks how the expense report can be described from the operational record in accounts payable operations. It is a measurement method, not a performance score or a legal conclusion.",
-          "The scope is one defined population and one observation window. State what is excluded before looking at results so the denominator cannot drift.",
+          "The AP scope is one defined supplier population and one observation window; state exclusions before looking at results so the denominator cannot drift.",
           "The method does not estimate an industry rate and does not compare staffing models. It produces a repeatable description that the AP manager can review.",
           "Write the next action as a sentence with an owner and a time. A vague request to review the expense report exception is not a next action; a named person, a specific check, and a deadline is.",
-          "Use a dated note for every owner decision. An approval that exists only in a meeting is difficult to reconstruct and easy to misremember."
+          "Use a dated note for every AP-manager decision; an approval that exists only in a meeting is hard to reconstruct and easy to misremember."
         ]
       },
       {
         "heading": "Population and unit of analysis",
         "paragraphs": [
           "The unit is one case involving the expense report, from the opening event through the recorded close. Keep the unit explicit so linked events are not counted as independent cases.",
-          "Record the opening count, additions, withdrawals, resolutions, and unresolved items at the end of the window. A count without a denominator is not a measurement.",
-          "Exclude reopened cases only when the reopening did not create a new requirement. Preserve the exclusion count and the reason.",
+          "Record opening invoice cases, additions, withdrawals, resolutions, and unresolved items; a count without that denominator is not a payment measure.",
+          "Exclude a reopened invoice case only when the reopening did not create a new payment requirement; preserve the count and reason.",
           "Keep the expense report queue separate from the general inbox. A shared queue without a named owner hides the oldest item and makes the weekly report look cleaner than the work.",
           "Keep the expense report source link durable. A screenshot may be useful for a quick review, but the link or record identifier is what lets the next person verify the value."
         ]
@@ -210,74 +210,74 @@ export const october26ResearchPosts: ResearchPost[] = [
       {
         "heading": "Definitions that make the measure reproducible",
         "paragraphs": [
-          "Write down the start event, the stop event, the pause rule, and the treatment of missing evidence before collecting data.",
-          "Define the primary measure and one or two supporting measures. A measure without a stated denominator or observation window is not yet a measure.",
-          "If a definition changes during the review, keep the earlier classification and apply the new rule only to later cases.",
-          "When a source is unavailable, record that fact instead of leaving the field blank. Missing, unavailable, and confirmed negative are three different states and should not be collapsed.",
-          "Name the point where the VA must stop and route. A boundary that says use judgment is not a boundary; it is a request for the VA to guess."
+          "Write down the AP protocol's start event, stop event, pause rule, and treatment of missing evidence before collecting invoice data.",
+          "Define one primary AP measure, such as first-pass invoice approval, plus one supporting measure; a measure without a denominator or observation window is not ready.",
+          "If an AP definition changes during the review, keep earlier invoice classifications and apply the new rule only to later cases.",
+          "When an AP source is unavailable, record that fact instead of leaving the field blank; missing, unavailable, and confirmed negative are three different states.",
+          "Name the point where the AP associate must stop and route; a boundary that says use judgment asks the associate to guess about payment or bank changes."
         ]
       },
       {
         "heading": "Evidence standard and data dictionary",
         "paragraphs": [
-          "Each case needs the source, the observation time, the field it supports, and the reviewer. Mark missing, unavailable, and confirmed negative values separately.",
-          "Use a pseudonymous case key. Keep the crosswalk between the key and the identity in an approved system with restricted access.",
-          "Record the version or date of every source. A current screenshot cannot prove what the record said when the first action was taken.",
+          "Each AP case needs the invoice source, observation time, field supported, and reviewer; mark missing, unavailable, and confirmed-negative values separately.",
+          "Use a pseudonymous invoice key and keep the supplier identity crosswalk in an approved system with restricted access.",
+          "Record the version or date of every vendor master, invoice, or remittance source; a current screenshot cannot prove what the record said earlier.",
           "Use a short reason code for every exception on the expense report. The code should describe the evidence problem, not the person who found it.",
-          "Check the destination, not only the activity. A payment marked sent, a schedule marked changed, or an access request marked complete should be verified in the system that owns the result."
+          "Verify the payment destination rather than the activity: a payment marked sent, a vendor record marked changed, or a hold marked released should be confirmed in the ledger that owns the result."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Use consecutive cases where possible, then stratify by channel, owner, or risk class. Convenience samples hide the cases that fail the control.",
-          "Include adverse cases: a missing source, a conflicting instruction, an unavailable owner, and a tight deadline. These cases show whether the process stops safely.",
-          "Record the collection window, the eligible count, the sample size, and every exclusion. The reviewer should be able to reproduce the sample.",
+          "Use consecutive invoice cases where possible, then stratify by supplier, payment channel, or risk class; convenience samples hide the exceptions that fail the control.",
+          "Include missing invoices, conflicting supplier instructions, unavailable approvers, and tight payment-run deadlines in the AP sample.",
+          "Record the AP collection window, eligible invoice count, sample size, and every exclusion so another reviewer can reproduce the sample.",
           "Review one case involving the expense report end to end in the weekly meeting. Check the source, the decision, the destination record, and the confirmation rather than only the completion count."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Report the eligible count, the sample, the missing-field rate, the exception rate, and the unresolved count at the close of the window.",
-          "Separate observation from interpretation. A high completion rate on a small easy sample is not evidence of a strong control.",
-          "Keep the case-level detail available for review. Summary charts without the underlying records cannot support a decision.",
+          "Report the eligible invoice count, sample, missing-field rate, exception rate, and unresolved count at the close of the AP window.",
+          "Separate what the AP associate observed from what the manager inferred; a high approval rate on a small easy sample is not evidence of a strong control.",
+          "Keep case-level invoice, approval, and payment records available for review; a summary chart without the underlying AP records cannot support a decision.",
           "If the expense report rule changes, keep the earlier classification and apply the new rule to later cases. A definition that changes quietly makes the trend unreadable."
         ]
       },
       {
         "heading": "Limitations and sources of error",
         "paragraphs": [
-          "The record may be incomplete, delayed, or maintained by someone outside the team. The method cannot infer missing work from a clean summary.",
-          "Small samples are sensitive to one case. Report the instability instead of presenting a precise-looking percentage.",
-          "The cited public sources frame recordkeeping, privacy, security, and internal control practice. They do not provide a result for this sample.",
+          "The AP record may be incomplete, delayed, or maintained by procurement or treasury; the method cannot infer missing work from a clean payment summary.",
+          "Small AP samples are sensitive to one duplicate or one bank-change exception; report the instability instead of a precise-looking percentage.",
+          "Public recordkeeping, privacy, security, and internal-control guidance frames the AP review but does not provide a payment result for this sample.",
           "Keep a named backup for the expense report owner. Coverage during leave or a time-zone gap should be written into the routine, not improvised when the owner is unavailable."
         ]
       },
       {
         "heading": "Review cadence and next action",
         "paragraphs": [
-          "Set a review date and name the person who will read the result. A report without a review owner is an archive, not a control.",
+          "Set a review date and name the AP manager who will read the result; a report without a review owner is an archive, not a control.",
           "Choose one next action: fix the source, simplify the field, change the queue, or stop the work until the AP manager decides. Record the decision and the next check.",
-          "Repeat the protocol after the change. Compare the same definitions and report what moved, what did not, and what remains unknown.",
+          "Repeat the AP protocol after a change and report what moved, what did not, and what remains unknown.",
           "Do not copy a value from a prior record for the expense report because it looks familiar. Reopen the source, confirm the version, and record what changed."
         ]
       },
       {
         "heading": "Data quality checks",
         "paragraphs": [
-          "Check identifiers, timestamps, impossible sequences, duplicates, and edits made after observation. Automated checks find inconsistencies; a reviewer interprets the meaning.",
-          "Keep the raw extract and the cleaned version. If a value changes, record the change and the reason rather than overwriting the observation.",
-          "Test one case end to end before running the full sample. A failed dry run is cheaper than discovering a definition error after collection.",
+          "Check invoice numbers, timestamps, impossible duplicate sequences, and edits after the first observation; automated checks flag conflicts, and the AP reviewer interprets them.",
+          "Keep the raw invoice extract and the cleaned version; when a value changes, record the change and reason rather than overwriting the observation.",
+          "Test one vendor invoice end to end before running the full AP sample; a failed dry run is cheaper than discovering a definition error after collection.",
           "Close the loop with the person who raised the expense report issue. A record that is internally complete but never confirmed by the requester is only half closed."
         ]
       },
       {
         "heading": "Privacy, access, and retention",
         "paragraphs": [
-          "Collect the minimum fields needed for the question. Use named accounts, role-based access, masked identifiers, and an approved storage location.",
-          "Log access and set a disposal date. A research file that lives forever is a liability, not an archive.",
-          "Do not copy personal data into a chat or a personal drive to save time. If the approved system cannot support the review, narrow the review.",
+          "Collect only the fields the AP question needs; use named accounts, role-based access, masked bank details, and an approved storage location.",
+          "Log access to the AP dataset and set a disposal date; a vendor file that lives forever is a liability, not an archive.",
+          "Do not copy supplier bank details into a chat or personal drive; if the approved AP system cannot support the review, narrow the review.",
           "Separate the request from the decision. The requester can describe the urgency; only the named owner can approve an exception that changes the outcome of the expense report."
         ]
       },
@@ -285,18 +285,18 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Worked example of the record",
         "paragraphs": [
           "An item arrives with a source that is one version behind the current record for the expense report. The reviewer flags the version, keeps the item open, and asks one question. No one rebuilds the case from memory.",
-          "The corrected source arrives, the reviewer compares it with the prior value, and the owner accepts the next action. The record now shows why the delay occurred and what changed.",
-          "The example is deliberately ordinary. The value of the protocol is that the same evidence standard applies to a routine case, an exception, and a reopened item.",
-          "Use a weekly exception count by reason and age. The pattern is more useful than a single total because it shows whether the problem is volume, training, or a missing rule.",
-          "Put the evidence standard in the task template, not in a separate policy document. The person doing the work should see the required source, owner, and close condition at the point of action."
+          "When the corrected invoice or vendor source arrives, the AP reviewer compares it with the prior value and the manager accepts the next action; the record shows what changed.",
+          "The example is deliberately ordinary; the AP protocol matters because the same evidence standard applies to a routine invoice, an exception, and a reopened duplicate.",
+          "Use a weekly AP exception count by reason and age; the pattern shows whether the problem is volume, training, or a missing rule.",
+          "Put the AP evidence standard in the invoice task template, not a separate policy document; the associate should see the required source, owner, and close condition."
         ]
       },
       {
         "heading": "What would change the answer",
         "paragraphs": [
-          "A new system, a policy change, a different client mix, or a material shift in volume can make the result stale. Record those triggers with the finding.",
-          "Name the next review date and the owner. A protocol that is not revisited becomes an old opinion with a citation.",
-          "If the source changes but the definitions do not, preserve the earlier result and label the new window. Do not splice two periods into one trend.",
+          "Record the AP trigger that would make a vendor invoice measure stale: a new ERP, changed payment terms, a supplier mix shift, or a volume spike.",
+          "Name the next AP review date and owner; a protocol that is never revisited becomes an old opinion with a citation.",
+          "If the vendor source changes but the definition does not, preserve the earlier result and label the new observation window; do not splice periods.",
           "Make the expense report handoff visible in the record. A chat message can start the handoff, but the source, the open question, and the next owner belong with the case.",
           "Measure the age of the oldest open item for the expense report, not only the average. An average can improve while one case sits unresolved for weeks."
         ]
@@ -305,10 +305,10 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Reporting package and handoff",
         "paragraphs": [
           "Publish the question, population, window, definitions, case flow, counts, unresolved items, disagreement summary, and limits together.",
-          "Leave the protocol, codebook, sample file, and open items in one place. A reviewer who did not run the first pass should be able to repeat the method.",
-          "Assign one owner for the protocol and one custodian for the data. Record the disposal date and the access list.",
+          "Leave the AP protocol, codebook, sample file, and open items in one folder so another reviewer can repeat the method.",
+          "Name one owner for the AP control and one custodian for the invoice extract; record the retention date and who can access the vendor master and payment files.",
           "Record the exact source for the expense report and the time it was observed. A later reviewer should be able to tell whether the value was current when the first action was taken, even if the record has changed since.",
-          "When a reviewer finds a defect, ask whether the template allowed it. If the same field is missed twice, the form or the instruction is part of the cause."
+          "When an AP reviewer finds a defect, ask whether the invoice template allowed it; if the same field is missed twice, the form or instruction is part of the cause."
         ]
       }
     ],
@@ -367,7 +367,7 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Research question and scope",
         "paragraphs": [
           "This protocol asks how the exception queue can be described from the operational record in accounts payable operations. It is a measurement method, not a performance score or a legal conclusion.",
-          "The scope is one defined population and one observation window. State what is excluded before looking at results so the denominator cannot drift.",
+          "The AP scope is one defined supplier population and one observation window; state exclusions before looking at results so the denominator cannot drift.",
           "The method does not estimate an industry rate and does not compare staffing models. It produces a repeatable description that the AP manager can review.",
           "Measure the age of the oldest open item for the exception queue, not only the average. An average can improve while one case sits unresolved for weeks."
         ]
@@ -376,54 +376,54 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Population and unit of analysis",
         "paragraphs": [
           "The unit is one case involving the exception queue, from the opening event through the recorded close. Keep the unit explicit so linked events are not counted as independent cases.",
-          "Record the opening count, additions, withdrawals, resolutions, and unresolved items at the end of the window. A count without a denominator is not a measurement.",
-          "Exclude reopened cases only when the reopening did not create a new requirement. Preserve the exclusion count and the reason.",
-          "When a reviewer finds a defect, ask whether the template allowed it. If the same field is missed twice, the form or the instruction is part of the cause."
+          "Record opening invoice cases, additions, withdrawals, resolutions, and unresolved items; a count without that denominator is not a payment measure.",
+          "Exclude a reopened invoice case only when the reopening did not create a new payment requirement; preserve the count and reason.",
+          "When an AP reviewer finds a defect, ask whether the invoice template allowed it; if the same field is missed twice, the form or instruction is part of the cause."
         ]
       },
       {
         "heading": "Definitions that make the measure reproducible",
         "paragraphs": [
-          "Write down the start event, the stop event, the pause rule, and the treatment of missing evidence before collecting data.",
-          "Define the primary measure and one or two supporting measures. A measure without a stated denominator or observation window is not yet a measure.",
-          "If a definition changes during the review, keep the earlier classification and apply the new rule only to later cases.",
-          "Use a dated note for every owner decision. An approval that exists only in a meeting is difficult to reconstruct and easy to misremember."
+          "Write down the AP protocol's start event, stop event, pause rule, and treatment of missing evidence before collecting invoice data.",
+          "Define one primary AP measure, such as first-pass invoice approval, plus one supporting measure; a measure without a denominator or observation window is not ready.",
+          "If an AP definition changes during the review, keep earlier invoice classifications and apply the new rule only to later cases.",
+          "Use a dated note for every AP-manager decision; an approval that exists only in a meeting is hard to reconstruct and easy to misremember."
         ]
       },
       {
         "heading": "Evidence standard and data dictionary",
         "paragraphs": [
-          "Each case needs the source, the observation time, the field it supports, and the reviewer. Mark missing, unavailable, and confirmed negative values separately.",
-          "Use a pseudonymous case key. Keep the crosswalk between the key and the identity in an approved system with restricted access.",
-          "Record the version or date of every source. A current screenshot cannot prove what the record said when the first action was taken.",
+          "Each AP case needs the invoice source, observation time, field supported, and reviewer; mark missing, unavailable, and confirmed-negative values separately.",
+          "Use a pseudonymous invoice key and keep the supplier identity crosswalk in an approved system with restricted access.",
+          "Record the version or date of every vendor master, invoice, or remittance source; a current screenshot cannot prove what the record said earlier.",
           "Keep the exception queue source link durable. A screenshot may be useful for a quick review, but the link or record identifier is what lets the next person verify the value."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Use consecutive cases where possible, then stratify by channel, owner, or risk class. Convenience samples hide the cases that fail the control.",
-          "Include adverse cases: a missing source, a conflicting instruction, an unavailable owner, and a tight deadline. These cases show whether the process stops safely.",
-          "Record the collection window, the eligible count, the sample size, and every exclusion. The reviewer should be able to reproduce the sample.",
-          "Name the point where the VA must stop and route. A boundary that says use judgment is not a boundary; it is a request for the VA to guess."
+          "Use consecutive invoice cases where possible, then stratify by supplier, payment channel, or risk class; convenience samples hide the exceptions that fail the control.",
+          "Include missing invoices, conflicting supplier instructions, unavailable approvers, and tight payment-run deadlines in the AP sample.",
+          "Record the AP collection window, eligible invoice count, sample size, and every exclusion so another reviewer can reproduce the sample.",
+          "Name the point where the AP associate must stop and route; a boundary that says use judgment asks the associate to guess about payment or bank changes."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Report the eligible count, the sample, the missing-field rate, the exception rate, and the unresolved count at the close of the window.",
-          "Separate observation from interpretation. A high completion rate on a small easy sample is not evidence of a strong control.",
-          "Keep the case-level detail available for review. Summary charts without the underlying records cannot support a decision.",
+          "Report the eligible invoice count, sample, missing-field rate, exception rate, and unresolved count at the close of the AP window.",
+          "Separate what the AP associate observed from what the manager inferred; a high approval rate on a small easy sample is not evidence of a strong control.",
+          "Keep case-level invoice, approval, and payment records available for review; a summary chart without the underlying AP records cannot support a decision.",
           "Use a short reason code for every exception on the exception queue. The code should describe the evidence problem, not the person who found it.",
-          "Check the destination, not only the activity. A payment marked sent, a schedule marked changed, or an access request marked complete should be verified in the system that owns the result."
+          "Verify the payment destination rather than the activity: a payment marked sent, a vendor record marked changed, or a hold marked released should be confirmed in the ledger that owns the result."
         ]
       },
       {
         "heading": "Limitations and sources of error",
         "paragraphs": [
-          "The record may be incomplete, delayed, or maintained by someone outside the team. The method cannot infer missing work from a clean summary.",
-          "Small samples are sensitive to one case. Report the instability instead of presenting a precise-looking percentage.",
-          "The cited public sources frame recordkeeping, privacy, security, and internal control practice. They do not provide a result for this sample.",
+          "The AP record may be incomplete, delayed, or maintained by procurement or treasury; the method cannot infer missing work from a clean payment summary.",
+          "Small AP samples are sensitive to one duplicate or one bank-change exception; report the instability instead of a precise-looking percentage.",
+          "Public recordkeeping, privacy, security, and internal-control guidance frames the AP review but does not provide a payment result for this sample.",
           "Review one case involving the exception queue end to end in the weekly meeting. Check the source, the decision, the destination record, and the confirmation rather than only the completion count.",
           "Record the reason for a reopened case involving the exception queue. The reason is evidence about the first close and should be used to improve the close rule."
         ]
@@ -431,9 +431,9 @@ export const october26ResearchPosts: ResearchPost[] = [
       {
         "heading": "Review cadence and next action",
         "paragraphs": [
-          "Set a review date and name the person who will read the result. A report without a review owner is an archive, not a control.",
+          "Set a review date and name the AP manager who will read the result; a report without a review owner is an archive, not a control.",
           "Choose one next action: fix the source, simplify the field, change the queue, or stop the work until the AP manager decides. Record the decision and the next check.",
-          "Repeat the protocol after the change. Compare the same definitions and report what moved, what did not, and what remains unknown.",
+          "Repeat the AP protocol after a change and report what moved, what did not, and what remains unknown.",
           "If the exception queue rule changes, keep the earlier classification and apply the new rule to later cases. A definition that changes quietly makes the trend unreadable.",
           "Keep a short decision log for the exception queue queue. The log should show the question, the owner, the decision, the date, and what would reopen it."
         ]
@@ -441,19 +441,19 @@ export const october26ResearchPosts: ResearchPost[] = [
       {
         "heading": "Data quality checks",
         "paragraphs": [
-          "Check identifiers, timestamps, impossible sequences, duplicates, and edits made after observation. Automated checks find inconsistencies; a reviewer interprets the meaning.",
-          "Keep the raw extract and the cleaned version. If a value changes, record the change and the reason rather than overwriting the observation.",
-          "Test one case end to end before running the full sample. A failed dry run is cheaper than discovering a definition error after collection.",
+          "Check invoice numbers, timestamps, impossible duplicate sequences, and edits after the first observation; automated checks flag conflicts, and the AP reviewer interprets them.",
+          "Keep the raw invoice extract and the cleaned version; when a value changes, record the change and reason rather than overwriting the observation.",
+          "Test one vendor invoice end to end before running the full AP sample; a failed dry run is cheaper than discovering a definition error after collection.",
           "Keep a named backup for the exception queue owner. Coverage during leave or a time-zone gap should be written into the routine, not improvised when the owner is unavailable.",
-          "Do not let a temporary workaround become the permanent process by default. Write the workaround, its owner, and its expiry date, then review it."
+          "Do not let a temporary spreadsheet workaround become the permanent AP process; write the workaround, owner, and expiry date, then review it."
         ]
       },
       {
         "heading": "Privacy, access, and retention",
         "paragraphs": [
-          "Collect the minimum fields needed for the question. Use named accounts, role-based access, masked identifiers, and an approved storage location.",
-          "Log access and set a disposal date. A research file that lives forever is a liability, not an archive.",
-          "Do not copy personal data into a chat or a personal drive to save time. If the approved system cannot support the review, narrow the review.",
+          "Collect only the fields the AP question needs; use named accounts, role-based access, masked bank details, and an approved storage location.",
+          "Log access to the AP dataset and set a disposal date; a vendor file that lives forever is a liability, not an archive.",
+          "Do not copy supplier bank details into a chat or personal drive; if the approved AP system cannot support the review, narrow the review.",
           "Do not copy a value from a prior record for the exception queue because it looks familiar. Reopen the source, confirm the version, and record what changed.",
           "When the exception queue source is maintained by another team, name the contact and the expected response time. Escalation without a contact becomes a repeated chase."
         ]
@@ -462,18 +462,18 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Worked example of the record",
         "paragraphs": [
           "An item arrives with a source that is one version behind the current record for the exception queue. The reviewer flags the version, keeps the item open, and asks one question. No one rebuilds the case from memory.",
-          "The corrected source arrives, the reviewer compares it with the prior value, and the owner accepts the next action. The record now shows why the delay occurred and what changed.",
-          "The example is deliberately ordinary. The value of the protocol is that the same evidence standard applies to a routine case, an exception, and a reopened item.",
+          "When the corrected invoice or vendor source arrives, the AP reviewer compares it with the prior value and the manager accepts the next action; the record shows what changed.",
+          "The example is deliberately ordinary; the AP protocol matters because the same evidence standard applies to a routine invoice, an exception, and a reopened duplicate.",
           "Close the loop with the person who raised the exception queue issue. A record that is internally complete but never confirmed by the requester is only half closed.",
-          "Use a weekly exception count by reason and age. The pattern is more useful than a single total because it shows whether the problem is volume, training, or a missing rule."
+          "Use a weekly AP exception count by reason and age; the pattern shows whether the problem is volume, training, or a missing rule."
         ]
       },
       {
         "heading": "What would change the answer",
         "paragraphs": [
-          "A new system, a policy change, a different client mix, or a material shift in volume can make the result stale. Record those triggers with the finding.",
-          "Name the next review date and the owner. A protocol that is not revisited becomes an old opinion with a citation.",
-          "If the source changes but the definitions do not, preserve the earlier result and label the new window. Do not splice two periods into one trend.",
+          "Record the AP trigger that would make a vendor invoice measure stale: a new ERP, changed payment terms, a supplier mix shift, or a volume spike.",
+          "Name the next AP review date and owner; a protocol that is never revisited becomes an old opinion with a citation.",
+          "If the vendor source changes but the definition does not, preserve the earlier result and label the new observation window; do not splice periods.",
           "Separate the request from the decision. The requester can describe the urgency; only the named owner can approve an exception that changes the outcome of the exception queue.",
           "Make the exception queue handoff visible in the record. A chat message can start the handoff, but the source, the open question, and the next owner belong with the case."
         ]
@@ -482,9 +482,9 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Reporting package and handoff",
         "paragraphs": [
           "Publish the question, population, window, definitions, case flow, counts, unresolved items, disagreement summary, and limits together.",
-          "Leave the protocol, codebook, sample file, and open items in one place. A reviewer who did not run the first pass should be able to repeat the method.",
-          "Assign one owner for the protocol and one custodian for the data. Record the disposal date and the access list.",
-          "Put the evidence standard in the task template, not in a separate policy document. The person doing the work should see the required source, owner, and close condition at the point of action.",
+          "Leave the AP protocol, codebook, sample file, and open items in one folder so another reviewer can repeat the method.",
+          "Name one owner for the AP control and one custodian for the invoice extract; record the retention date and who can access the vendor master and payment files.",
+          "Put the AP evidence standard in the invoice task template, not a separate policy document; the associate should see the required source, owner, and close condition.",
           "Record the exact source for the exception queue and the time it was observed. A later reviewer should be able to tell whether the value was current when the first action was taken, even if the record has changed since."
         ]
       }
@@ -544,7 +544,7 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Research question and scope",
         "paragraphs": [
           "This protocol asks how the payment run can be described from the operational record in accounts payable operations. It is a measurement method, not a performance score or a legal conclusion.",
-          "The scope is one defined population and one observation window. State what is excluded before looking at results so the denominator cannot drift.",
+          "The AP scope is one defined supplier population and one observation window; state exclusions before looking at results so the denominator cannot drift.",
           "The method does not estimate an industry rate and does not compare staffing models. It produces a repeatable description that the AP manager can review.",
           "Measure the age of the oldest open item for the payment run, not only the average. An average can improve while one case sits unresolved for weeks.",
           "Write the next action as a sentence with an owner and a time. A vague request to review the payment run exception is not a next action; a named person, a specific check, and a deadline is."
@@ -554,82 +554,82 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Population and unit of analysis",
         "paragraphs": [
           "The unit is one case involving the payment run, from the opening event through the recorded close. Keep the unit explicit so linked events are not counted as independent cases.",
-          "Record the opening count, additions, withdrawals, resolutions, and unresolved items at the end of the window. A count without a denominator is not a measurement.",
-          "Exclude reopened cases only when the reopening did not create a new requirement. Preserve the exclusion count and the reason.",
-          "When a reviewer finds a defect, ask whether the template allowed it. If the same field is missed twice, the form or the instruction is part of the cause.",
+          "Record opening invoice cases, additions, withdrawals, resolutions, and unresolved items; a count without that denominator is not a payment measure.",
+          "Exclude a reopened invoice case only when the reopening did not create a new payment requirement; preserve the count and reason.",
+          "When an AP reviewer finds a defect, ask whether the invoice template allowed it; if the same field is missed twice, the form or instruction is part of the cause.",
           "Keep the payment run queue separate from the general inbox. A shared queue without a named owner hides the oldest item and makes the weekly report look cleaner than the work."
         ]
       },
       {
         "heading": "Definitions that make the measure reproducible",
         "paragraphs": [
-          "Write down the start event, the stop event, the pause rule, and the treatment of missing evidence before collecting data.",
-          "Define the primary measure and one or two supporting measures. A measure without a stated denominator or observation window is not yet a measure.",
-          "If a definition changes during the review, keep the earlier classification and apply the new rule only to later cases.",
-          "Use a dated note for every owner decision. An approval that exists only in a meeting is difficult to reconstruct and easy to misremember."
+          "Write down the AP protocol's start event, stop event, pause rule, and treatment of missing evidence before collecting invoice data.",
+          "Define one primary AP measure, such as first-pass invoice approval, plus one supporting measure; a measure without a denominator or observation window is not ready.",
+          "If an AP definition changes during the review, keep earlier invoice classifications and apply the new rule only to later cases.",
+          "Use a dated note for every AP-manager decision; an approval that exists only in a meeting is hard to reconstruct and easy to misremember."
         ]
       },
       {
         "heading": "Evidence standard and data dictionary",
         "paragraphs": [
-          "Each case needs the source, the observation time, the field it supports, and the reviewer. Mark missing, unavailable, and confirmed negative values separately.",
-          "Use a pseudonymous case key. Keep the crosswalk between the key and the identity in an approved system with restricted access.",
-          "Record the version or date of every source. A current screenshot cannot prove what the record said when the first action was taken.",
+          "Each AP case needs the invoice source, observation time, field supported, and reviewer; mark missing, unavailable, and confirmed-negative values separately.",
+          "Use a pseudonymous invoice key and keep the supplier identity crosswalk in an approved system with restricted access.",
+          "Record the version or date of every vendor master, invoice, or remittance source; a current screenshot cannot prove what the record said earlier.",
           "Keep the payment run source link durable. A screenshot may be useful for a quick review, but the link or record identifier is what lets the next person verify the value."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Use consecutive cases where possible, then stratify by channel, owner, or risk class. Convenience samples hide the cases that fail the control.",
-          "Include adverse cases: a missing source, a conflicting instruction, an unavailable owner, and a tight deadline. These cases show whether the process stops safely.",
-          "Record the collection window, the eligible count, the sample size, and every exclusion. The reviewer should be able to reproduce the sample.",
-          "Name the point where the VA must stop and route. A boundary that says use judgment is not a boundary; it is a request for the VA to guess."
+          "Use consecutive invoice cases where possible, then stratify by supplier, payment channel, or risk class; convenience samples hide the exceptions that fail the control.",
+          "Include missing invoices, conflicting supplier instructions, unavailable approvers, and tight payment-run deadlines in the AP sample.",
+          "Record the AP collection window, eligible invoice count, sample size, and every exclusion so another reviewer can reproduce the sample.",
+          "Name the point where the AP associate must stop and route; a boundary that says use judgment asks the associate to guess about payment or bank changes."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Report the eligible count, the sample, the missing-field rate, the exception rate, and the unresolved count at the close of the window.",
-          "Separate observation from interpretation. A high completion rate on a small easy sample is not evidence of a strong control.",
-          "Keep the case-level detail available for review. Summary charts without the underlying records cannot support a decision.",
-          "Check the destination, not only the activity. A payment marked sent, a schedule marked changed, or an access request marked complete should be verified in the system that owns the result."
+          "Report the eligible invoice count, sample, missing-field rate, exception rate, and unresolved count at the close of the AP window.",
+          "Separate what the AP associate observed from what the manager inferred; a high approval rate on a small easy sample is not evidence of a strong control.",
+          "Keep case-level invoice, approval, and payment records available for review; a summary chart without the underlying AP records cannot support a decision.",
+          "Verify the payment destination rather than the activity: a payment marked sent, a vendor record marked changed, or a hold marked released should be confirmed in the ledger that owns the result."
         ]
       },
       {
         "heading": "Limitations and sources of error",
         "paragraphs": [
-          "The record may be incomplete, delayed, or maintained by someone outside the team. The method cannot infer missing work from a clean summary.",
-          "Small samples are sensitive to one case. Report the instability instead of presenting a precise-looking percentage.",
-          "The cited public sources frame recordkeeping, privacy, security, and internal control practice. They do not provide a result for this sample.",
+          "The AP record may be incomplete, delayed, or maintained by procurement or treasury; the method cannot infer missing work from a clean payment summary.",
+          "Small AP samples are sensitive to one duplicate or one bank-change exception; report the instability instead of a precise-looking percentage.",
+          "Public recordkeeping, privacy, security, and internal-control guidance frames the AP review but does not provide a payment result for this sample.",
           "Record the reason for a reopened case involving the payment run. The reason is evidence about the first close and should be used to improve the close rule."
         ]
       },
       {
         "heading": "Review cadence and next action",
         "paragraphs": [
-          "Set a review date and name the person who will read the result. A report without a review owner is an archive, not a control.",
+          "Set a review date and name the AP manager who will read the result; a report without a review owner is an archive, not a control.",
           "Choose one next action: fix the source, simplify the field, change the queue, or stop the work until the AP manager decides. Record the decision and the next check.",
-          "Repeat the protocol after the change. Compare the same definitions and report what moved, what did not, and what remains unknown.",
+          "Repeat the AP protocol after a change and report what moved, what did not, and what remains unknown.",
           "Keep a short decision log for the payment run queue. The log should show the question, the owner, the decision, the date, and what would reopen it."
         ]
       },
       {
         "heading": "Data quality checks",
         "paragraphs": [
-          "Check identifiers, timestamps, impossible sequences, duplicates, and edits made after observation. Automated checks find inconsistencies; a reviewer interprets the meaning.",
-          "Keep the raw extract and the cleaned version. If a value changes, record the change and the reason rather than overwriting the observation.",
-          "Test one case end to end before running the full sample. A failed dry run is cheaper than discovering a definition error after collection.",
+          "Check invoice numbers, timestamps, impossible duplicate sequences, and edits after the first observation; automated checks flag conflicts, and the AP reviewer interprets them.",
+          "Keep the raw invoice extract and the cleaned version; when a value changes, record the change and reason rather than overwriting the observation.",
+          "Test one vendor invoice end to end before running the full AP sample; a failed dry run is cheaper than discovering a definition error after collection.",
           "Keep a named backup for the payment run owner. Coverage during leave or a time-zone gap should be written into the routine, not improvised when the owner is unavailable.",
-          "Do not let a temporary workaround become the permanent process by default. Write the workaround, its owner, and its expiry date, then review it."
+          "Do not let a temporary spreadsheet workaround become the permanent AP process; write the workaround, owner, and expiry date, then review it."
         ]
       },
       {
         "heading": "Privacy, access, and retention",
         "paragraphs": [
-          "Collect the minimum fields needed for the question. Use named accounts, role-based access, masked identifiers, and an approved storage location.",
-          "Log access and set a disposal date. A research file that lives forever is a liability, not an archive.",
-          "Do not copy personal data into a chat or a personal drive to save time. If the approved system cannot support the review, narrow the review.",
+          "Collect only the fields the AP question needs; use named accounts, role-based access, masked bank details, and an approved storage location.",
+          "Log access to the AP dataset and set a disposal date; a vendor file that lives forever is a liability, not an archive.",
+          "Do not copy supplier bank details into a chat or personal drive; if the approved AP system cannot support the review, narrow the review.",
           "Do not copy a value from a prior record for the payment run because it looks familiar. Reopen the source, confirm the version, and record what changed.",
           "When the payment run source is maintained by another team, name the contact and the expected response time. Escalation without a contact becomes a repeated chase."
         ]
@@ -638,18 +638,18 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Worked example of the record",
         "paragraphs": [
           "An item arrives with a source that is one version behind the current record for the payment run. The reviewer flags the version, keeps the item open, and asks one question. No one rebuilds the case from memory.",
-          "The corrected source arrives, the reviewer compares it with the prior value, and the owner accepts the next action. The record now shows why the delay occurred and what changed.",
-          "The example is deliberately ordinary. The value of the protocol is that the same evidence standard applies to a routine case, an exception, and a reopened item.",
+          "When the corrected invoice or vendor source arrives, the AP reviewer compares it with the prior value and the manager accepts the next action; the record shows what changed.",
+          "The example is deliberately ordinary; the AP protocol matters because the same evidence standard applies to a routine invoice, an exception, and a reopened duplicate.",
           "Close the loop with the person who raised the payment run issue. A record that is internally complete but never confirmed by the requester is only half closed.",
-          "Use a weekly exception count by reason and age. The pattern is more useful than a single total because it shows whether the problem is volume, training, or a missing rule."
+          "Use a weekly AP exception count by reason and age; the pattern shows whether the problem is volume, training, or a missing rule."
         ]
       },
       {
         "heading": "What would change the answer",
         "paragraphs": [
-          "A new system, a policy change, a different client mix, or a material shift in volume can make the result stale. Record those triggers with the finding.",
-          "Name the next review date and the owner. A protocol that is not revisited becomes an old opinion with a citation.",
-          "If the source changes but the definitions do not, preserve the earlier result and label the new window. Do not splice two periods into one trend.",
+          "Record the AP trigger that would make a vendor invoice measure stale: a new ERP, changed payment terms, a supplier mix shift, or a volume spike.",
+          "Name the next AP review date and owner; a protocol that is never revisited becomes an old opinion with a citation.",
+          "If the vendor source changes but the definition does not, preserve the earlier result and label the new observation window; do not splice periods.",
           "Separate the request from the decision. The requester can describe the urgency; only the named owner can approve an exception that changes the outcome of the payment run.",
           "Make the payment run handoff visible in the record. A chat message can start the handoff, but the source, the open question, and the next owner belong with the case."
         ]
@@ -658,9 +658,9 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Reporting package and handoff",
         "paragraphs": [
           "Publish the question, population, window, definitions, case flow, counts, unresolved items, disagreement summary, and limits together.",
-          "Leave the protocol, codebook, sample file, and open items in one place. A reviewer who did not run the first pass should be able to repeat the method.",
-          "Assign one owner for the protocol and one custodian for the data. Record the disposal date and the access list.",
-          "Put the evidence standard in the task template, not in a separate policy document. The person doing the work should see the required source, owner, and close condition at the point of action.",
+          "Leave the AP protocol, codebook, sample file, and open items in one folder so another reviewer can repeat the method.",
+          "Name one owner for the AP control and one custodian for the invoice extract; record the retention date and who can access the vendor master and payment files.",
+          "Put the AP evidence standard in the invoice task template, not a separate policy document; the associate should see the required source, owner, and close condition.",
           "Record the exact source for the payment run and the time it was observed. A later reviewer should be able to tell whether the value was current when the first action was taken, even if the record has changed since."
         ]
       }
@@ -720,7 +720,7 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Research question and scope",
         "paragraphs": [
           "This protocol asks how the duplicate invoice can be described from the operational record in accounts payable operations. It is a measurement method, not a performance score or a legal conclusion.",
-          "The scope is one defined population and one observation window. State what is excluded before looking at results so the denominator cannot drift.",
+          "The AP scope is one defined supplier population and one observation window; state exclusions before looking at results so the denominator cannot drift.",
           "The method does not estimate an industry rate and does not compare staffing models. It produces a repeatable description that the AP manager can review.",
           "Write the next action as a sentence with an owner and a time. A vague request to review the duplicate invoice exception is not a next action; a named person, a specific check, and a deadline is."
         ]
@@ -729,27 +729,27 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Population and unit of analysis",
         "paragraphs": [
           "The unit is one case involving the duplicate invoice, from the opening event through the recorded close. Keep the unit explicit so linked events are not counted as independent cases.",
-          "Record the opening count, additions, withdrawals, resolutions, and unresolved items at the end of the window. A count without a denominator is not a measurement.",
-          "Exclude reopened cases only when the reopening did not create a new requirement. Preserve the exclusion count and the reason.",
+          "Record opening invoice cases, additions, withdrawals, resolutions, and unresolved items; a count without that denominator is not a payment measure.",
+          "Exclude a reopened invoice case only when the reopening did not create a new payment requirement; preserve the count and reason.",
           "Keep the duplicate invoice queue separate from the general inbox. A shared queue without a named owner hides the oldest item and makes the weekly report look cleaner than the work."
         ]
       },
       {
         "heading": "Definitions that make the measure reproducible",
         "paragraphs": [
-          "Write down the start event, the stop event, the pause rule, and the treatment of missing evidence before collecting data.",
-          "Define the primary measure and one or two supporting measures. A measure without a stated denominator or observation window is not yet a measure.",
-          "If a definition changes during the review, keep the earlier classification and apply the new rule only to later cases.",
-          "Use a dated note for every owner decision. An approval that exists only in a meeting is difficult to reconstruct and easy to misremember.",
-          "When a source is unavailable, record that fact instead of leaving the field blank. Missing, unavailable, and confirmed negative are three different states and should not be collapsed."
+          "Write down the AP protocol's start event, stop event, pause rule, and treatment of missing evidence before collecting invoice data.",
+          "Define one primary AP measure, such as first-pass invoice approval, plus one supporting measure; a measure without a denominator or observation window is not ready.",
+          "If an AP definition changes during the review, keep earlier invoice classifications and apply the new rule only to later cases.",
+          "Use a dated note for every AP-manager decision; an approval that exists only in a meeting is hard to reconstruct and easy to misremember.",
+          "When an AP source is unavailable, record that fact instead of leaving the field blank; missing, unavailable, and confirmed negative are three different states."
         ]
       },
       {
         "heading": "Evidence standard and data dictionary",
         "paragraphs": [
-          "Each case needs the source, the observation time, the field it supports, and the reviewer. Mark missing, unavailable, and confirmed negative values separately.",
-          "Use a pseudonymous case key. Keep the crosswalk between the key and the identity in an approved system with restricted access.",
-          "Record the version or date of every source. A current screenshot cannot prove what the record said when the first action was taken.",
+          "Each AP case needs the invoice source, observation time, field supported, and reviewer; mark missing, unavailable, and confirmed-negative values separately.",
+          "Use a pseudonymous invoice key and keep the supplier identity crosswalk in an approved system with restricted access.",
+          "Record the version or date of every vendor master, invoice, or remittance source; a current screenshot cannot prove what the record said earlier.",
           "Keep the duplicate invoice source link durable. A screenshot may be useful for a quick review, but the link or record identifier is what lets the next person verify the value.",
           "Use a short reason code for every exception on the duplicate invoice. The code should describe the evidence problem, not the person who found it."
         ]
@@ -757,29 +757,29 @@ export const october26ResearchPosts: ResearchPost[] = [
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Use consecutive cases where possible, then stratify by channel, owner, or risk class. Convenience samples hide the cases that fail the control.",
-          "Include adverse cases: a missing source, a conflicting instruction, an unavailable owner, and a tight deadline. These cases show whether the process stops safely.",
-          "Record the collection window, the eligible count, the sample size, and every exclusion. The reviewer should be able to reproduce the sample.",
-          "Name the point where the VA must stop and route. A boundary that says use judgment is not a boundary; it is a request for the VA to guess.",
+          "Use consecutive invoice cases where possible, then stratify by supplier, payment channel, or risk class; convenience samples hide the exceptions that fail the control.",
+          "Include missing invoices, conflicting supplier instructions, unavailable approvers, and tight payment-run deadlines in the AP sample.",
+          "Record the AP collection window, eligible invoice count, sample size, and every exclusion so another reviewer can reproduce the sample.",
+          "Name the point where the AP associate must stop and route; a boundary that says use judgment asks the associate to guess about payment or bank changes.",
           "Review one case involving the duplicate invoice end to end in the weekly meeting. Check the source, the decision, the destination record, and the confirmation rather than only the completion count."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Report the eligible count, the sample, the missing-field rate, the exception rate, and the unresolved count at the close of the window.",
-          "Separate observation from interpretation. A high completion rate on a small easy sample is not evidence of a strong control.",
-          "Keep the case-level detail available for review. Summary charts without the underlying records cannot support a decision.",
-          "Check the destination, not only the activity. A payment marked sent, a schedule marked changed, or an access request marked complete should be verified in the system that owns the result.",
+          "Report the eligible invoice count, sample, missing-field rate, exception rate, and unresolved count at the close of the AP window.",
+          "Separate what the AP associate observed from what the manager inferred; a high approval rate on a small easy sample is not evidence of a strong control.",
+          "Keep case-level invoice, approval, and payment records available for review; a summary chart without the underlying AP records cannot support a decision.",
+          "Verify the payment destination rather than the activity: a payment marked sent, a vendor record marked changed, or a hold marked released should be confirmed in the ledger that owns the result.",
           "If the duplicate invoice rule changes, keep the earlier classification and apply the new rule to later cases. A definition that changes quietly makes the trend unreadable."
         ]
       },
       {
         "heading": "Limitations and sources of error",
         "paragraphs": [
-          "The record may be incomplete, delayed, or maintained by someone outside the team. The method cannot infer missing work from a clean summary.",
-          "Small samples are sensitive to one case. Report the instability instead of presenting a precise-looking percentage.",
-          "The cited public sources frame recordkeeping, privacy, security, and internal control practice. They do not provide a result for this sample.",
+          "The AP record may be incomplete, delayed, or maintained by procurement or treasury; the method cannot infer missing work from a clean payment summary.",
+          "Small AP samples are sensitive to one duplicate or one bank-change exception; report the instability instead of a precise-looking percentage.",
+          "Public recordkeeping, privacy, security, and internal-control guidance frames the AP review but does not provide a payment result for this sample.",
           "Record the reason for a reopened case involving the duplicate invoice. The reason is evidence about the first close and should be used to improve the close rule.",
           "Keep a named backup for the duplicate invoice owner. Coverage during leave or a time-zone gap should be written into the routine, not improvised when the owner is unavailable."
         ]
@@ -787,9 +787,9 @@ export const october26ResearchPosts: ResearchPost[] = [
       {
         "heading": "Review cadence and next action",
         "paragraphs": [
-          "Set a review date and name the person who will read the result. A report without a review owner is an archive, not a control.",
+          "Set a review date and name the AP manager who will read the result; a report without a review owner is an archive, not a control.",
           "Choose one next action: fix the source, simplify the field, change the queue, or stop the work until the AP manager decides. Record the decision and the next check.",
-          "Repeat the protocol after the change. Compare the same definitions and report what moved, what did not, and what remains unknown.",
+          "Repeat the AP protocol after a change and report what moved, what did not, and what remains unknown.",
           "Keep a short decision log for the duplicate invoice queue. The log should show the question, the owner, the decision, the date, and what would reopen it.",
           "Do not copy a value from a prior record for the duplicate invoice because it looks familiar. Reopen the source, confirm the version, and record what changed."
         ]
@@ -797,19 +797,19 @@ export const october26ResearchPosts: ResearchPost[] = [
       {
         "heading": "Data quality checks",
         "paragraphs": [
-          "Check identifiers, timestamps, impossible sequences, duplicates, and edits made after observation. Automated checks find inconsistencies; a reviewer interprets the meaning.",
-          "Keep the raw extract and the cleaned version. If a value changes, record the change and the reason rather than overwriting the observation.",
-          "Test one case end to end before running the full sample. A failed dry run is cheaper than discovering a definition error after collection.",
-          "Do not let a temporary workaround become the permanent process by default. Write the workaround, its owner, and its expiry date, then review it.",
+          "Check invoice numbers, timestamps, impossible duplicate sequences, and edits after the first observation; automated checks flag conflicts, and the AP reviewer interprets them.",
+          "Keep the raw invoice extract and the cleaned version; when a value changes, record the change and reason rather than overwriting the observation.",
+          "Test one vendor invoice end to end before running the full AP sample; a failed dry run is cheaper than discovering a definition error after collection.",
+          "Do not let a temporary spreadsheet workaround become the permanent AP process; write the workaround, owner, and expiry date, then review it.",
           "Close the loop with the person who raised the duplicate invoice issue. A record that is internally complete but never confirmed by the requester is only half closed."
         ]
       },
       {
         "heading": "Privacy, access, and retention",
         "paragraphs": [
-          "Collect the minimum fields needed for the question. Use named accounts, role-based access, masked identifiers, and an approved storage location.",
-          "Log access and set a disposal date. A research file that lives forever is a liability, not an archive.",
-          "Do not copy personal data into a chat or a personal drive to save time. If the approved system cannot support the review, narrow the review.",
+          "Collect only the fields the AP question needs; use named accounts, role-based access, masked bank details, and an approved storage location.",
+          "Log access to the AP dataset and set a disposal date; a vendor file that lives forever is a liability, not an archive.",
+          "Do not copy supplier bank details into a chat or personal drive; if the approved AP system cannot support the review, narrow the review.",
           "When the duplicate invoice source is maintained by another team, name the contact and the expected response time. Escalation without a contact becomes a repeated chase.",
           "Separate the request from the decision. The requester can describe the urgency; only the named owner can approve an exception that changes the outcome of the duplicate invoice."
         ]
@@ -818,17 +818,17 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Worked example of the record",
         "paragraphs": [
           "An item arrives with a source that is one version behind the current record for the duplicate invoice. The reviewer flags the version, keeps the item open, and asks one question. No one rebuilds the case from memory.",
-          "The corrected source arrives, the reviewer compares it with the prior value, and the owner accepts the next action. The record now shows why the delay occurred and what changed.",
-          "The example is deliberately ordinary. The value of the protocol is that the same evidence standard applies to a routine case, an exception, and a reopened item.",
-          "Use a weekly exception count by reason and age. The pattern is more useful than a single total because it shows whether the problem is volume, training, or a missing rule."
+          "When the corrected invoice or vendor source arrives, the AP reviewer compares it with the prior value and the manager accepts the next action; the record shows what changed.",
+          "The example is deliberately ordinary; the AP protocol matters because the same evidence standard applies to a routine invoice, an exception, and a reopened duplicate.",
+          "Use a weekly AP exception count by reason and age; the pattern shows whether the problem is volume, training, or a missing rule."
         ]
       },
       {
         "heading": "What would change the answer",
         "paragraphs": [
-          "A new system, a policy change, a different client mix, or a material shift in volume can make the result stale. Record those triggers with the finding.",
-          "Name the next review date and the owner. A protocol that is not revisited becomes an old opinion with a citation.",
-          "If the source changes but the definitions do not, preserve the earlier result and label the new window. Do not splice two periods into one trend.",
+          "Record the AP trigger that would make a vendor invoice measure stale: a new ERP, changed payment terms, a supplier mix shift, or a volume spike.",
+          "Name the next AP review date and owner; a protocol that is never revisited becomes an old opinion with a citation.",
+          "If the vendor source changes but the definition does not, preserve the earlier result and label the new observation window; do not splice periods.",
           "Make the duplicate invoice handoff visible in the record. A chat message can start the handoff, but the source, the open question, and the next owner belong with the case."
         ]
       },
@@ -836,8 +836,8 @@ export const october26ResearchPosts: ResearchPost[] = [
         "heading": "Reporting package and handoff",
         "paragraphs": [
           "Publish the question, population, window, definitions, case flow, counts, unresolved items, disagreement summary, and limits together.",
-          "Leave the protocol, codebook, sample file, and open items in one place. A reviewer who did not run the first pass should be able to repeat the method.",
-          "Assign one owner for the protocol and one custodian for the data. Record the disposal date and the access list.",
+          "Leave the AP protocol, codebook, sample file, and open items in one folder so another reviewer can repeat the method.",
+          "Name one owner for the AP control and one custodian for the invoice extract; record the retention date and who can access the vendor master and payment files.",
           "Record the exact source for the duplicate invoice and the time it was observed. A later reviewer should be able to tell whether the value was current when the first action was taken, even if the record has changed since."
         ]
       }
