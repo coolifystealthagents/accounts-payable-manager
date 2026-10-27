@@ -2,13 +2,13 @@ import type { ResearchPost } from './types';
 
 export const october27ResearchPosts: readonly ResearchPost[] = [
   {
-    "slug": "accountspayablemanager-attributing-rework-in-the-1099-record",
+    "slug": "accountspayablemanager-attributing-rework-in-the-1099-record-2026-10-27",
     "title": "Attributing rework in the 1099 record",
     "summary": "A repeatable measurement protocol for the 1099 record in accounts payable operations, with definitions, sampling, limits, and reporting.",
     "cluster": "Quality Analysis",
     "publishedAt": "2026-10-27",
     "finding": "This protocol asks how the 1099 record can be described from the operational record in accounts payable operations.",
-    "thumbnail": "/thumbnails/october-27/accountspayablemanager-attributing-rework-in-the-1099-record.webp",
+    "thumbnail": "/thumbnails/october-27/accountspayablemanager-attributing-rework-in-the-1099-record-2026-10-27.webp",
     "methodology": "A repeatable measurement protocol for the 1099 record in accounts payable operations, with definitions, sampling, limits, and reporting.",
     "sections": [
       {
@@ -164,13 +164,13 @@ export const october27ResearchPosts: readonly ResearchPost[] = [
     ]
   },
   {
-    "slug": "accountspayablemanager-capacity-planning-for-the-expense-report",
+    "slug": "accountspayablemanager-capacity-planning-for-the-expense-report-2026-10-27",
     "title": "Capacity planning for the expense report",
     "summary": "A repeatable measurement protocol for the expense report in accounts payable operations, with definitions, sampling, limits, and reporting.",
     "cluster": "Capacity and Coverage",
     "publishedAt": "2026-10-27",
     "finding": "This protocol asks how the expense report can be described from the operational record in accounts payable operations.",
-    "thumbnail": "/thumbnails/october-27/accountspayablemanager-capacity-planning-for-the-expense-report.webp",
+    "thumbnail": "/thumbnails/october-27/accountspayablemanager-capacity-planning-for-the-expense-report-2026-10-27.webp",
     "methodology": "A repeatable measurement protocol for the expense report in accounts payable operations, with definitions, sampling, limits, and reporting.",
     "sections": [
       {
@@ -326,13 +326,13 @@ export const october27ResearchPosts: readonly ResearchPost[] = [
     ]
   },
   {
-    "slug": "accountspayablemanager-early-warning-signals-in-the-exception-queue",
+    "slug": "accountspayablemanager-early-warning-signals-in-the-exception-queue-2026-10-27",
     "title": "Early-warning signals in the exception queue",
     "summary": "A repeatable measurement protocol for the exception queue in accounts payable operations, with definitions, sampling, limits, and reporting.",
     "cluster": "Risk Review",
     "publishedAt": "2026-10-27",
     "finding": "This protocol asks how the exception queue can be described from the operational record in accounts payable operations.",
-    "thumbnail": "/thumbnails/october-27/accountspayablemanager-early-warning-signals-in-the-exception-queue.webp",
+    "thumbnail": "/thumbnails/october-27/accountspayablemanager-early-warning-signals-in-the-exception-queue-2026-10-27.webp",
     "methodology": "A repeatable measurement protocol for the exception queue in accounts payable operations, with definitions, sampling, limits, and reporting.",
     "sections": [
       {
@@ -489,13 +489,13 @@ export const october27ResearchPosts: readonly ResearchPost[] = [
     ]
   },
   {
-    "slug": "accountspayablemanager-measuring-response-time-for-the-payment-run",
+    "slug": "accountspayablemanager-measuring-response-time-for-the-payment-run-2026-10-27",
     "title": "Measuring response time for the payment run",
     "summary": "A repeatable measurement protocol for the payment run in accounts payable operations, with definitions, sampling, limits, and reporting.",
     "cluster": "Measurement",
     "publishedAt": "2026-10-27",
     "finding": "This protocol asks how the payment run can be described from the operational record in accounts payable operations.",
-    "thumbnail": "/thumbnails/october-27/accountspayablemanager-measuring-response-time-for-the-payment-run.webp",
+    "thumbnail": "/thumbnails/october-27/accountspayablemanager-measuring-response-time-for-the-payment-run-2026-10-27.webp",
     "methodology": "A repeatable measurement protocol for the payment run in accounts payable operations, with definitions, sampling, limits, and reporting.",
     "sections": [
       {
@@ -651,13 +651,13 @@ export const october27ResearchPosts: readonly ResearchPost[] = [
     ]
   },
   {
-    "slug": "accountspayablemanager-testing-completeness-in-the-duplicate-invoice",
+    "slug": "accountspayablemanager-testing-completeness-in-the-duplicate-invoice-2026-10-27",
     "title": "Testing completeness in the duplicate invoice",
     "summary": "A repeatable measurement protocol for the duplicate invoice in accounts payable operations, with definitions, sampling, limits, and reporting.",
     "cluster": "Measurement",
     "publishedAt": "2026-10-27",
     "finding": "This protocol asks how the duplicate invoice can be described from the operational record in accounts payable operations.",
-    "thumbnail": "/thumbnails/october-27/accountspayablemanager-testing-completeness-in-the-duplicate-invoice.webp",
+    "thumbnail": "/thumbnails/october-27/accountspayablemanager-testing-completeness-in-the-duplicate-invoice-2026-10-27.webp",
     "methodology": "A repeatable measurement protocol for the duplicate invoice in accounts payable operations, with definitions, sampling, limits, and reporting.",
     "sections": [
       {

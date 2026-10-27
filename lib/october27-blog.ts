@@ -2,13 +2,13 @@ import type { BlogPost } from './types';
 
 export const october27BlogPosts: readonly BlogPost[] = [
   {
-    "slug": "accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review",
+    "slug": "accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review-2026-10-27",
     "title": "Build an intake record for the vendor invoice that survives review",
     "description": "A source-bounded accounts payable operations guide for AP managers and finance teams, focused on the vendor invoice and bounded by honest evidence.",
     "category": "Intake and Records",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/thumbnails/october-27/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review.webp",
+    "thumbnail": "/thumbnails/october-27/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the vendor invoice needs its own control",
@@ -107,20 +107,20 @@ export const october27BlogPosts: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review",
+    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review-2026-10-27",
     "source": {
       "label": "Financial Crimes Enforcement Network",
       "url": "https://www.fincen.gov/"
     }
   },
   {
-    "slug": "accountspayablemanager-map-the-source-of-truth-for-the-vendor-master-record",
+    "slug": "accountspayablemanager-map-the-source-of-truth-for-the-vendor-master-record-2026-10-27",
     "title": "Map the source of truth for the vendor master record",
     "description": "A source-bounded accounts payable operations guide for AP managers and finance teams, focused on the vendor master record and bounded by honest evidence.",
     "category": "Intake and Records",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/thumbnails/october-27/accountspayablemanager-map-the-source-of-truth-for-the-vendor-master-record.webp",
+    "thumbnail": "/thumbnails/october-27/accountspayablemanager-map-the-source-of-truth-for-the-vendor-master-record-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the vendor master record needs its own control",
@@ -218,20 +218,20 @@ export const october27BlogPosts: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review",
+    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review-2026-10-27",
     "source": {
       "label": "NIST Cybersecurity Framework",
       "url": "https://www.nist.gov/cyberframework"
     }
   },
   {
-    "slug": "accountspayablemanager-onboard-a-va-into-the-vendor-master-record-workflow-in-the-first-week",
+    "slug": "accountspayablemanager-onboard-a-va-into-the-vendor-master-record-workflow-in-the-first-week-2026-10-27",
     "title": "Onboard a VA into the vendor master record workflow in the first week",
     "description": "A source-bounded accounts payable operations guide for AP managers and finance teams, focused on the vendor master record and bounded by honest evidence.",
     "category": "Handoff and Ownership",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/thumbnails/october-27/accountspayablemanager-onboard-a-va-into-the-vendor-master-record-workflow-in-the-first-week.webp",
+    "thumbnail": "/thumbnails/october-27/accountspayablemanager-onboard-a-va-into-the-vendor-master-record-workflow-in-the-first-week-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the vendor master record needs its own control",
@@ -329,20 +329,20 @@ export const october27BlogPosts: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review",
+    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review-2026-10-27",
     "source": {
       "label": "U.S. Small Business Administration",
       "url": "https://www.sba.gov/"
     }
   },
   {
-    "slug": "accountspayablemanager-report-the-payment-run-without-vanity-metrics",
+    "slug": "accountspayablemanager-report-the-payment-run-without-vanity-metrics-2026-10-27",
     "title": "Report the payment run without vanity metrics",
     "description": "A source-bounded accounts payable operations guide for AP managers and finance teams, focused on the payment run and bounded by honest evidence.",
     "category": "Reporting and Review",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/thumbnails/october-27/accountspayablemanager-report-the-payment-run-without-vanity-metrics.webp",
+    "thumbnail": "/thumbnails/october-27/accountspayablemanager-report-the-payment-run-without-vanity-metrics-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the payment run needs its own control",
@@ -441,20 +441,20 @@ export const october27BlogPosts: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review",
+    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review-2026-10-27",
     "source": {
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/"
     }
   },
   {
-    "slug": "accountspayablemanager-review-access-before-changing-the-expense-report",
+    "slug": "accountspayablemanager-review-access-before-changing-the-expense-report-2026-10-27",
     "title": "Review access before changing the expense report",
     "description": "A source-bounded accounts payable operations guide for AP managers and finance teams, focused on the expense report and bounded by honest evidence.",
     "category": "Access and Controls",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/thumbnails/october-27/accountspayablemanager-review-access-before-changing-the-expense-report.webp",
+    "thumbnail": "/thumbnails/october-27/accountspayablemanager-review-access-before-changing-the-expense-report-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the expense report needs its own control",
@@ -552,20 +552,20 @@ export const october27BlogPosts: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review",
+    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review-2026-10-27",
     "source": {
       "label": "AICPA and CIMA",
       "url": "https://www.aicpa-cima.com/"
     }
   },
   {
-    "slug": "accountspayablemanager-run-a-weekly-review-for-the-vendor-invoice",
+    "slug": "accountspayablemanager-run-a-weekly-review-for-the-vendor-invoice-2026-10-27",
     "title": "Run a weekly review for the vendor invoice",
     "description": "A source-bounded accounts payable operations guide for AP managers and finance teams, focused on the vendor invoice and bounded by honest evidence.",
     "category": "Reporting and Review",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/thumbnails/october-27/accountspayablemanager-run-a-weekly-review-for-the-vendor-invoice.webp",
+    "thumbnail": "/thumbnails/october-27/accountspayablemanager-run-a-weekly-review-for-the-vendor-invoice-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the vendor invoice needs its own control",
@@ -664,20 +664,20 @@ export const october27BlogPosts: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review",
+    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review-2026-10-27",
     "source": {
       "label": "U.S. Small Business Administration",
       "url": "https://www.sba.gov/"
     }
   },
   {
-    "slug": "accountspayablemanager-run-an-exception-queue-for-the-payment-run",
+    "slug": "accountspayablemanager-run-an-exception-queue-for-the-payment-run-2026-10-27",
     "title": "Run an exception queue for the payment run",
     "description": "A source-bounded accounts payable operations guide for AP managers and finance teams, focused on the payment run and bounded by honest evidence.",
     "category": "Exceptions and Quality",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/thumbnails/october-27/accountspayablemanager-run-an-exception-queue-for-the-payment-run.webp",
+    "thumbnail": "/thumbnails/october-27/accountspayablemanager-run-an-exception-queue-for-the-payment-run-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the payment run needs its own control",
@@ -775,20 +775,20 @@ export const october27BlogPosts: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review",
+    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review-2026-10-27",
     "source": {
       "label": "AICPA and CIMA",
       "url": "https://www.aicpa-cima.com/"
     }
   },
   {
-    "slug": "accountspayablemanager-sample-quality-for-the-1099-record-without-guessing",
+    "slug": "accountspayablemanager-sample-quality-for-the-1099-record-without-guessing-2026-10-27",
     "title": "Sample quality for the 1099 record without guessing",
     "description": "A source-bounded accounts payable operations guide for AP managers and finance teams, focused on the 1099 record and bounded by honest evidence.",
     "category": "Exceptions and Quality",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/thumbnails/october-27/accountspayablemanager-sample-quality-for-the-1099-record-without-guessing.webp",
+    "thumbnail": "/thumbnails/october-27/accountspayablemanager-sample-quality-for-the-1099-record-without-guessing-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the 1099 record needs its own control",
@@ -886,20 +886,20 @@ export const october27BlogPosts: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review",
+    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review-2026-10-27",
     "source": {
       "label": "Financial Crimes Enforcement Network",
       "url": "https://www.fincen.gov/"
     }
   },
   {
-    "slug": "accountspayablemanager-set-approval-boundaries-around-the-duplicate-invoice",
+    "slug": "accountspayablemanager-set-approval-boundaries-around-the-duplicate-invoice-2026-10-27",
     "title": "Set approval boundaries around the duplicate invoice",
     "description": "A source-bounded accounts payable operations guide for AP managers and finance teams, focused on the duplicate invoice and bounded by honest evidence.",
     "category": "Handoff and Ownership",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/thumbnails/october-27/accountspayablemanager-set-approval-boundaries-around-the-duplicate-invoice.webp",
+    "thumbnail": "/thumbnails/october-27/accountspayablemanager-set-approval-boundaries-around-the-duplicate-invoice-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the duplicate invoice needs its own control",
@@ -997,20 +997,20 @@ export const october27BlogPosts: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review",
+    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review-2026-10-27",
     "source": {
       "label": "NIST Cybersecurity Framework",
       "url": "https://www.nist.gov/cyberframework"
     }
   },
   {
-    "slug": "accountspayablemanager-standardize-updates-to-the-exception-queue-across-the-team",
+    "slug": "accountspayablemanager-standardize-updates-to-the-exception-queue-across-the-team-2026-10-27",
     "title": "Standardize updates to the exception queue across the team",
     "description": "A source-bounded accounts payable operations guide for AP managers and finance teams, focused on the exception queue and bounded by honest evidence.",
     "category": "Intake and Records",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/thumbnails/october-27/accountspayablemanager-standardize-updates-to-the-exception-queue-across-the-team.webp",
+    "thumbnail": "/thumbnails/october-27/accountspayablemanager-standardize-updates-to-the-exception-queue-across-the-team-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the exception queue needs its own control",
@@ -1109,20 +1109,20 @@ export const october27BlogPosts: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review",
+    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review-2026-10-27",
     "source": {
       "label": "NIST Cybersecurity Framework",
       "url": "https://www.nist.gov/cyberframework"
     }
   },
   {
-    "slug": "accountspayablemanager-write-a-handoff-protocol-for-the-approval-matrix",
+    "slug": "accountspayablemanager-write-a-handoff-protocol-for-the-approval-matrix-2026-10-27",
     "title": "Write a handoff protocol for the approval matrix",
     "description": "A source-bounded accounts payable operations guide for AP managers and finance teams, focused on the approval matrix and bounded by honest evidence.",
     "category": "Handoff and Ownership",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/thumbnails/october-27/accountspayablemanager-write-a-handoff-protocol-for-the-approval-matrix.webp",
+    "thumbnail": "/thumbnails/october-27/accountspayablemanager-write-a-handoff-protocol-for-the-approval-matrix-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the approval matrix needs its own control",
@@ -1220,20 +1220,20 @@ export const october27BlogPosts: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review",
+    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review-2026-10-27",
     "source": {
       "label": "NIST Cybersecurity Framework",
       "url": "https://www.nist.gov/cyberframework"
     }
   },
   {
-    "slug": "accountspayablemanager-write-an-sop-for-the-approval-matrix-that-people-use",
+    "slug": "accountspayablemanager-write-an-sop-for-the-approval-matrix-that-people-use-2026-10-27",
     "title": "Write an SOP for the approval matrix that people use",
     "description": "A source-bounded accounts payable operations guide for AP managers and finance teams, focused on the approval matrix and bounded by honest evidence.",
     "category": "Intake and Records",
     "publishedAt": "2026-10-27",
     "readTime": "5 min read",
-    "thumbnail": "/thumbnails/october-27/accountspayablemanager-write-an-sop-for-the-approval-matrix-that-people-use.webp",
+    "thumbnail": "/thumbnails/october-27/accountspayablemanager-write-an-sop-for-the-approval-matrix-that-people-use-2026-10-27.webp",
     "sections": [
       {
         "heading": "Why the approval matrix needs its own control",
@@ -1331,7 +1331,7 @@ export const october27BlogPosts: readonly BlogPost[] = [
       }
     ],
     "internalService": "/services",
-    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review",
+    "internalSibling": "/blog/accountspayablemanager-build-an-intake-record-for-the-vendor-invoice-that-survives-review-2026-10-27",
     "source": {
       "label": "U.S. Small Business Administration",
       "url": "https://www.sba.gov/"
