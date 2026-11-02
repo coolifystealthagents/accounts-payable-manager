@@ -1,5 +1,7 @@
 import { site } from './site';
 import type { BlogPost, ResearchPost } from './types';
+import { november01BlogPosts } from './november01-blog';
+import { november01ResearchPosts } from './november01-research';
 import { october12BlogPosts } from './october12-blog';
 import { october12ResearchPosts } from './october12-research';
 import { october22BlogPosts } from './october22-blog';
@@ -924,9 +926,11 @@ const legacyResearchPosts: ResearchPost[] = [
 ];
 
 export const blogPosts: BlogPost[] = [
+  ...november01BlogPosts,
   ...october28BlogPosts,
   ...october27BlogPosts,...october26BlogPosts, ...october25BlogPosts, ...october22BlogPosts, ...october12BlogPosts, ...legacyBlogPosts];
 export const researchPosts: ResearchPost[] = [
+  ...november01ResearchPosts,
   ...october28ResearchPosts,
   ...october27ResearchPosts,...october26ResearchPosts, ...october25ResearchPosts, ...october22ResearchPosts, ...october12ResearchPosts, ...legacyResearchPosts];
 
