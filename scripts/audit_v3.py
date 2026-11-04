@@ -40,7 +40,7 @@ contracts = {
     "approved review collection has at least ten records": len(re.findall(r"\bid: '[^']+'", reviews)) >= 10,
     "contact uses approved review collection": "ReviewMarquee" in contact,
     "review rail renders each approved record once": review_component.count("stealthAgentsReviews.map") == 1 and "clone" not in review_component,
-    "contact uses official Bacolod team asset": "/brand/team-bacolod.jpg" in contact,
+    "contact uses official Bacolod team asset": "/brand/stealth-agents-team-bacolod.png" in read("lib/media.ts") and "media.officialTeam" in contact,
     "service template contains workflow, controls, boundaries, examples and FAQs": all(token in service_page for token in ("workflow", "controls", "boundaries", "scenarios", "faqs")),
     "blog template uses generated TOC sidebar": "ArticleSidebar" in blog_page and "tocItems" in blog_page,
     "research template uses generated TOC sidebar": "ArticleSidebar" in research_page and "tocItems" in research_page,

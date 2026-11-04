@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { site } from '@/lib/site';
 import { serviceBySlug } from '@/lib/content';
+import { serviceMedia } from '@/lib/media';
 
 const detail: Record<string, {
   audience: string;
@@ -96,6 +98,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   const service = serviceBySlug(slug);
   if (!service) notFound();
   const d = detail[slug];
+  const image = serviceMedia[slug];
   const related = site.services.filter((item) => item.slug !== slug).slice(0, 3);
   return (
     <main id="main-content" tabIndex={-1} className="service-detail">
@@ -106,16 +109,16 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <p>{service.short}</p>
           <Link id={`cta-services-${service.slug}-bookcall`} className="button primary" href="/contact-us">Discuss this role in a free call</Link>
         </div>
-        <img className="route-hero-image" src={`/visual/${service.slug}`} alt={`Visual workflow for ${service.name}`} />
+        <figure className="route-hero-image" data-reveal-media><Image src={image.src} alt={image.alt} fill priority sizes="(max-width: 1050px) 88vw, 44vw" style={{ objectPosition: image.position }} /></figure>
       </header>
       <section className="content-wrap service-prose">
-        <section><p className="eyebrow">Who this is for</p><h2>A focused role for a visible queue.</h2><p>{d.audience}</p><p>{d.problem}</p></section>
-        <section className="service-columns"><div><h2>Inputs the role needs</h2><ul>{d.inputs.map((item) => <li key={item}>{item}</li>)}</ul></div><div><h2>Outputs your team can review</h2><ul>{d.outputs.map((item) => <li key={item}>{item}</li>)}</ul></div></section>
-        <section><p className="eyebrow">Working model</p><h2>How the workflow operates</h2><div className="workflow-list">{d.workflow.map(([title, copy]) => <article key={title}><h3>{title}</h3><p>{copy}</p></article>)}</div></section>
-        <section className="service-columns"><div><h2>Quality controls</h2><ul>{d.controls.map((item) => <li key={item}>{item}</li>)}</ul></div><div><h2>Decisions that stay with your team</h2><ul>{d.boundaries.map((item) => <li key={item}>{item}</li>)}</ul></div></section>
-        <section><p className="eyebrow">Common starting scenarios</p><h2>Begin where the handoff is already visible.</h2><div className="scenario-grid">{d.scenarios.map(([title, copy]) => <article key={title}><h3>{title}</h3><p>{copy}</p></article>)}</div></section>
-        <section><p className="eyebrow">Questions about the role</p><h2>Frequently asked questions</h2>{d.faqs.map(([q, a]) => <details key={q}><summary>{q}</summary><p>{a}</p></details>)}</section>
-        <section><p className="eyebrow">Related support</p><h2>Build the surrounding workflow.</h2><div className="related-links">{related.map((item) => <Link key={item.slug} href={`/services/${item.slug}`}><strong>{item.name}</strong><span>{item.short}</span></Link>)}</div></section>
+        <section className="service-context"><div><p className="eyebrow">Who needs this role</p><h2>A focused role for a visible queue.</h2></div><div><p>{d.audience}</p><p>{d.problem}</p><h3>Work included in the starting scope</h3><ul className="scope-list">{service.tasks.map((item) => <li key={item}>{item}</li>)}</ul></div></section>
+        <section className="input-output-ledger"><header><h2>The handoff, made reviewable</h2><p>Inputs stay traceable to approved systems; outputs are prepared for an accountable reviewer.</p></header><div><h3>Inputs the role needs</h3><ul>{d.inputs.map((item) => <li key={item}>{item}</li>)}</ul></div><div><h3>Outputs your team can review</h3><ul>{d.outputs.map((item) => <li key={item}>{item}</li>)}</ul></div></section>
+        <section className="workflow-section"><h2>How the workflow operates</h2><div className="workflow-list">{d.workflow.map(([title, copy], index) => <article key={title}><span>0{index + 1}</span><div><h3>{title}</h3><p>{copy}</p></div></article>)}</div></section>
+        <section className="control-matrix"><div><h2>Quality checks</h2><ul>{d.controls.map((item) => <li key={item}>{item}</li>)}</ul></div><div><h2>Human decision boundaries</h2><ul>{d.boundaries.map((item) => <li key={item}>{item}</li>)}</ul></div></section>
+        <section className="scenario-section"><h2>Starting scenarios</h2><p>Begin where the handoff is already visible and the accountable owner can review the prepared work.</p><div className="scenario-grid">{d.scenarios.map(([title, copy]) => <article key={title}><h3>{title}</h3><p>{copy}</p></article>)}</div></section>
+        <section className="service-faq"><h2>Questions about this role</h2>{d.faqs.map(([q, a]) => <details key={q}><summary>{q}</summary><p>{a}</p></details>)}</section>
+        <section className="related-section"><h2>Build the surrounding workflow</h2><div className="related-links">{related.map((item) => <Link key={item.slug} href={`/services/${item.slug}`}><strong>{item.name}</strong><span>{item.short}</span></Link>)}</div></section>
         <section className="inline-cta"><h2>Turn this workflow into a clear role brief.</h2><p>Bring your current queue, owner map, systems, and approval boundaries. We will help identify a controlled place to begin.</p><Link id={`cta-services-${service.slug}-consultation`} className="button primary" href="/contact-us">Plan a free consultation</Link></section>
       </section>
     </main>

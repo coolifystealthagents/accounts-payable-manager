@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { LeadForm } from '@/components/LeadForm';
 import { ReviewMarquee } from '@/components/Reviews';
 import { site } from '@/lib/site';
+import { media } from '@/lib/media';
 import './contact.css';
 
 export const metadata: Metadata = {
@@ -69,7 +70,7 @@ export default function ContactPage() {
       <section className="contact-section credibility" aria-labelledby="stealth-team-title">
         <div className="contact-container credibility-grid">
           <figure className="team-photo">
-            <Image src="/brand/team-bacolod.jpg" alt="StealthAgents team members collaborating in the Bacolod office" fill sizes="(max-width: 900px) 90vw, 52vw" priority />
+            <Image src={media.officialTeam.src} alt={media.officialTeam.alt} fill sizes="(max-width: 760px) 90vw, 640px" style={{ objectPosition: media.officialTeam.position }} />
             <figcaption className="official-team-plate">
               <Image src="/brand/stealth-agents-logo-black.webp" alt="StealthAgents" width={119} height={40} />
               <span>Official team, Bacolod</span>

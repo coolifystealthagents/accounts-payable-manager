@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
+import { media } from '@/lib/media';
 
 export const metadata: Metadata = { title: 'Choose a time', robots: { index: false, follow: false } };
 
@@ -7,7 +9,7 @@ export default function ThankYouPage() {
     <main id="main-content" tabIndex={-1} className="utility-page booking-page">
       <header className="utility-hero">
         <div><p className="eyebrow">Request received</p><h1>Thanks. Pick a time that works for you.</h1><p>Your free consultation can help turn the workflow into a clear support brief.</p></div>
-        <img className="utility-visual" src="/visual/consultation-calendar" alt="Consultation calendar connected to an accounts payable workflow" />
+        <figure className="utility-visual" data-reveal-media><Image src={media.officialTeam.src} alt={media.officialTeam.alt} fill priority sizes="(max-width: 1050px) 88vw, 520px" style={{ objectPosition: media.officialTeam.position }} /></figure>
       </header>
       <section className="content-wrap booking-panel" aria-labelledby="booking-title">
         <div><p className="eyebrow">Next step</p><h2 id="booking-title">Choose your consultation time</h2><p>The scheduler is provided by OnceHub. Selecting a time continues in the embedded booking service.</p></div>

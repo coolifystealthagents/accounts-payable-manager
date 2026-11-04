@@ -16,10 +16,10 @@ export const site: SiteConfig = {
   "accent": "#d89352",
   "canvas": "#f5f2fb",
   "ink": "#1d1834",
-  "displayFont": "Perpetua",
+  "displayFont": "Cabinet Grotesk",
   "bodyFont": "Avenir Next",
-  "heroImage": "/hero.png",
-  "heroAlt": "Indigo and copper invoice cards routing through a central approval hub",
+  "heroImage": "/images/apm/pexels-7731358.webp",
+  "heroAlt": "Invoice documents and a laptop during a working review",
   "services": [
     {
       "slug": "invoice-intake",
