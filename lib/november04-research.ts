@@ -1,12 +1,12 @@
 export const november04ResearchPosts = [
   {
-    "slug": "accountspayablemanager-measuring-the-age-of-invoice-exceptions-2026-11-04",
+    "slug": "accountspayablemanager-measuring-the-age-of-invoice-exceptions",
     "title": "Measuring the age of invoice exceptions",
     "summary": "A reproducible measurement protocol for invoice exception aging in accounts payable teams, with a frozen population, a defined sample, and explicit limits.",
     "cluster": "Measurement",
     "publishedAt": "2026-11-04",
     "finding": "The invoice exception aging result should describe a defined population and its evidence gaps, not an industry benchmark.",
-    "thumbnail": "/thumbnails/november-04/accountspayablemanager-measuring-the-age-of-invoice-exceptions-2026-11-04.webp",
+    "thumbnail": "/thumbnails/november-04/accountspayablemanager-measuring-the-age-of-invoice-exceptions.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -107,13 +107,13 @@ export const november04ResearchPosts = [
     ]
   },
   {
-    "slug": "accountspayablemanager-auditing-purchase-order-accrual-completeness-2026-11-04",
+    "slug": "accountspayablemanager-auditing-purchase-order-accrual-completeness",
     "title": "Auditing purchase order accrual completeness",
     "summary": "A reproducible measurement protocol for purchase order accrual in accounts payable teams, with a frozen population, a defined sample, and explicit limits.",
     "cluster": "Quality",
     "publishedAt": "2026-11-04",
     "finding": "The purchase order accrual result should describe a defined population and its evidence gaps, not an industry benchmark.",
-    "thumbnail": "/thumbnails/november-04/accountspayablemanager-auditing-purchase-order-accrual-completeness-2026-11-04.webp",
+    "thumbnail": "/thumbnails/november-04/accountspayablemanager-auditing-purchase-order-accrual-completeness.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -214,13 +214,13 @@ export const november04ResearchPosts = [
     ]
   },
   {
-    "slug": "accountspayablemanager-measuring-vendor-onboarding-cycle-time-2026-11-04",
+    "slug": "accountspayablemanager-measuring-vendor-onboarding-cycle-time",
     "title": "Measuring vendor onboarding cycle time",
     "summary": "A reproducible measurement protocol for vendor onboarding in accounts payable teams, with a frozen population, a defined sample, and explicit limits.",
     "cluster": "Coverage",
     "publishedAt": "2026-11-04",
     "finding": "The vendor onboarding result should describe a defined population and its evidence gaps, not an industry benchmark.",
-    "thumbnail": "/thumbnails/november-04/accountspayablemanager-measuring-vendor-onboarding-cycle-time-2026-11-04.webp",
+    "thumbnail": "/thumbnails/november-04/accountspayablemanager-measuring-vendor-onboarding-cycle-time.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -321,13 +321,13 @@ export const november04ResearchPosts = [
     ]
   },
   {
-    "slug": "accountspayablemanager-testing-duplicate-payment-recovery-evidence-2026-11-04",
+    "slug": "accountspayablemanager-testing-duplicate-payment-recovery-evidence",
     "title": "Testing duplicate payment recovery evidence",
     "summary": "A reproducible measurement protocol for duplicate payment recovery in accounts payable teams, with a frozen population, a defined sample, and explicit limits.",
     "cluster": "Quality",
     "publishedAt": "2026-11-04",
     "finding": "The duplicate payment recovery result should describe a defined population and its evidence gaps, not an industry benchmark.",
-    "thumbnail": "/thumbnails/november-04/accountspayablemanager-testing-duplicate-payment-recovery-evidence-2026-11-04.webp",
+    "thumbnail": "/thumbnails/november-04/accountspayablemanager-testing-duplicate-payment-recovery-evidence.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -428,13 +428,13 @@ export const november04ResearchPosts = [
     ]
   },
   {
-    "slug": "accountspayablemanager-auditing-1099-vendor-data-quality-2026-11-04",
+    "slug": "accountspayablemanager-auditing-1099-vendor-data-quality",
     "title": "Auditing 1099 vendor data quality",
     "summary": "A reproducible measurement protocol for 1099 preparation in accounts payable teams, with a frozen population, a defined sample, and explicit limits.",
     "cluster": "Quality",
     "publishedAt": "2026-11-04",
     "finding": "The 1099 preparation result should describe a defined population and its evidence gaps, not an industry benchmark.",
-    "thumbnail": "/thumbnails/november-04/accountspayablemanager-auditing-1099-vendor-data-quality-2026-11-04.webp",
+    "thumbnail": "/thumbnails/november-04/accountspayablemanager-auditing-1099-vendor-data-quality.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -535,13 +535,13 @@ export const november04ResearchPosts = [
     ]
   },
   {
-    "slug": "accountspayablemanager-measuring-corporate-card-reconciliation-variance-2026-11-04",
+    "slug": "accountspayablemanager-measuring-corporate-card-reconciliation-variance",
     "title": "Measuring corporate card reconciliation variance",
     "summary": "A reproducible measurement protocol for corporate card reconciliation in accounts payable teams, with a frozen population, a defined sample, and explicit limits.",
     "cluster": "Measurement",
     "publishedAt": "2026-11-04",
     "finding": "The corporate card reconciliation result should describe a defined population and its evidence gaps, not an industry benchmark.",
-    "thumbnail": "/thumbnails/november-04/accountspayablemanager-measuring-corporate-card-reconciliation-variance-2026-11-04.webp",
+    "thumbnail": "/thumbnails/november-04/accountspayablemanager-measuring-corporate-card-reconciliation-variance.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -642,13 +642,13 @@ export const november04ResearchPosts = [
     ]
   },
   {
-    "slug": "accountspayablemanager-reviewing-ap-helpdesk-response-coverage-2026-11-04",
+    "slug": "accountspayablemanager-reviewing-ap-helpdesk-response-coverage",
     "title": "Reviewing AP helpdesk response coverage",
     "summary": "A reproducible measurement protocol for AP helpdesk response in accounts payable teams, with a frozen population, a defined sample, and explicit limits.",
     "cluster": "Coverage",
     "publishedAt": "2026-11-04",
     "finding": "The AP helpdesk response result should describe a defined population and its evidence gaps, not an industry benchmark.",
-    "thumbnail": "/thumbnails/november-04/accountspayablemanager-reviewing-ap-helpdesk-response-coverage-2026-11-04.webp",
+    "thumbnail": "/thumbnails/november-04/accountspayablemanager-reviewing-ap-helpdesk-response-coverage.webp",
     "sections": [
       {
         "heading": "Question and scope",

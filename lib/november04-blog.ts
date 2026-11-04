@@ -1,12 +1,12 @@
 export const november04BlogPosts = [
   {
-    "slug": "accountspayablemanager-age-invoice-exceptions-before-they-become-late-payments-2026-11-04",
+    "slug": "accountspayablemanager-age-invoice-exceptions-before-they-become-late-payments",
     "title": "Age invoice exceptions before they become late payments",
     "description": "A practical accounts payable teams guide for controllers, finance leaders, and operations managers, focused on invoice exception aging with explicit evidence, decision rights, and a verified close.",
     "category": "Invoice controls",
     "publishedAt": "2026-11-04",
     "readTime": "11 min read",
-    "thumbnail": "/thumbnails/november-04/accountspayablemanager-age-invoice-exceptions-before-they-become-late-payments-2026-11-04.webp",
+    "thumbnail": "/thumbnails/november-04/accountspayablemanager-age-invoice-exceptions-before-they-become-late-payments.webp",
     "sections": [
       {
         "heading": "The control this invoice exception aging needs",
@@ -87,13 +87,13 @@ export const november04BlogPosts = [
     }
   },
   {
-    "slug": "accountspayablemanager-prepare-a-purchase-order-accrual-without-guessing-2026-11-04",
+    "slug": "accountspayablemanager-prepare-a-purchase-order-accrual-without-guessing",
     "title": "Prepare a purchase order accrual without guessing",
     "description": "A practical accounts payable teams guide for controllers, finance leaders, and operations managers, focused on purchase order accrual with explicit evidence, decision rights, and a verified close.",
     "category": "Approval workflow",
     "publishedAt": "2026-11-04",
     "readTime": "11 min read",
-    "thumbnail": "/thumbnails/november-04/accountspayablemanager-prepare-a-purchase-order-accrual-without-guessing-2026-11-04.webp",
+    "thumbnail": "/thumbnails/november-04/accountspayablemanager-prepare-a-purchase-order-accrual-without-guessing.webp",
     "sections": [
       {
         "heading": "The control this purchase order accrual needs",
@@ -174,13 +174,13 @@ export const november04BlogPosts = [
     }
   },
   {
-    "slug": "accountspayablemanager-onboard-a-vendor-with-a-reviewable-evidence-packet-2026-11-04",
+    "slug": "accountspayablemanager-onboard-a-vendor-with-a-reviewable-evidence-packet",
     "title": "Onboard a vendor with a reviewable evidence packet",
     "description": "A practical accounts payable teams guide for controllers, finance leaders, and operations managers, focused on vendor onboarding with explicit evidence, decision rights, and a verified close.",
     "category": "Vendor records",
     "publishedAt": "2026-11-04",
     "readTime": "11 min read",
-    "thumbnail": "/thumbnails/november-04/accountspayablemanager-onboard-a-vendor-with-a-reviewable-evidence-packet-2026-11-04.webp",
+    "thumbnail": "/thumbnails/november-04/accountspayablemanager-onboard-a-vendor-with-a-reviewable-evidence-packet.webp",
     "sections": [
       {
         "heading": "The control this vendor onboarding needs",
@@ -261,13 +261,13 @@ export const november04BlogPosts = [
     }
   },
   {
-    "slug": "accountspayablemanager-recover-a-duplicate-payment-without-losing-the-audit-trail-2026-11-04",
+    "slug": "accountspayablemanager-recover-a-duplicate-payment-without-losing-the-audit-trail",
     "title": "Recover a duplicate payment without losing the audit trail",
     "description": "A practical accounts payable teams guide for controllers, finance leaders, and operations managers, focused on duplicate payment recovery with explicit evidence, decision rights, and a verified close.",
     "category": "Payment posting",
     "publishedAt": "2026-11-04",
     "readTime": "11 min read",
-    "thumbnail": "/thumbnails/november-04/accountspayablemanager-recover-a-duplicate-payment-without-losing-the-audit-trail-2026-11-04.webp",
+    "thumbnail": "/thumbnails/november-04/accountspayablemanager-recover-a-duplicate-payment-without-losing-the-audit-trail.webp",
     "sections": [
       {
         "heading": "The control this duplicate payment recovery needs",
@@ -348,13 +348,13 @@ export const november04BlogPosts = [
     }
   },
   {
-    "slug": "accountspayablemanager-prepare-1099-vendor-data-before-the-filing-window-2026-11-04",
+    "slug": "accountspayablemanager-prepare-1099-vendor-data-before-the-filing-window",
     "title": "Prepare 1099 vendor data before the filing window",
     "description": "A practical accounts payable teams guide for controllers, finance leaders, and operations managers, focused on 1099 preparation with explicit evidence, decision rights, and a verified close.",
     "category": "Vendor records",
     "publishedAt": "2026-11-04",
     "readTime": "11 min read",
-    "thumbnail": "/thumbnails/november-04/accountspayablemanager-prepare-1099-vendor-data-before-the-filing-window-2026-11-04.webp",
+    "thumbnail": "/thumbnails/november-04/accountspayablemanager-prepare-1099-vendor-data-before-the-filing-window.webp",
     "sections": [
       {
         "heading": "The control this 1099 preparation needs",
@@ -435,13 +435,13 @@ export const november04BlogPosts = [
     }
   },
   {
-    "slug": "accountspayablemanager-reconcile-petty-cash-without-rewriting-the-ledger-2026-11-04",
+    "slug": "accountspayablemanager-reconcile-petty-cash-without-rewriting-the-ledger",
     "title": "Reconcile petty cash without rewriting the ledger",
     "description": "A practical accounts payable teams guide for controllers, finance leaders, and operations managers, focused on petty cash reconciliation with explicit evidence, decision rights, and a verified close.",
     "category": "Payment posting",
     "publishedAt": "2026-11-04",
     "readTime": "11 min read",
-    "thumbnail": "/thumbnails/november-04/accountspayablemanager-reconcile-petty-cash-without-rewriting-the-ledger-2026-11-04.webp",
+    "thumbnail": "/thumbnails/november-04/accountspayablemanager-reconcile-petty-cash-without-rewriting-the-ledger.webp",
     "sections": [
       {
         "heading": "The control this petty cash reconciliation needs",
@@ -522,13 +522,13 @@ export const november04BlogPosts = [
     }
   },
   {
-    "slug": "accountspayablemanager-reconcile-corporate-card-spend-with-receipt-evidence-2026-11-04",
+    "slug": "accountspayablemanager-reconcile-corporate-card-spend-with-receipt-evidence",
     "title": "Reconcile corporate card spend with receipt evidence",
     "description": "A practical accounts payable teams guide for controllers, finance leaders, and operations managers, focused on corporate card reconciliation with explicit evidence, decision rights, and a verified close.",
     "category": "Payment posting",
     "publishedAt": "2026-11-04",
     "readTime": "11 min read",
-    "thumbnail": "/thumbnails/november-04/accountspayablemanager-reconcile-corporate-card-spend-with-receipt-evidence-2026-11-04.webp",
+    "thumbnail": "/thumbnails/november-04/accountspayablemanager-reconcile-corporate-card-spend-with-receipt-evidence.webp",
     "sections": [
       {
         "heading": "The control this corporate card reconciliation needs",
@@ -609,13 +609,13 @@ export const november04BlogPosts = [
     }
   },
   {
-    "slug": "accountspayablemanager-run-an-ap-helpdesk-queue-with-dated-ownership-2026-11-04",
+    "slug": "accountspayablemanager-run-an-ap-helpdesk-queue-with-dated-ownership",
     "title": "Run an AP helpdesk queue with dated ownership",
     "description": "A practical accounts payable teams guide for controllers, finance leaders, and operations managers, focused on AP helpdesk response with explicit evidence, decision rights, and a verified close.",
     "category": "Approval workflow",
     "publishedAt": "2026-11-04",
     "readTime": "11 min read",
-    "thumbnail": "/thumbnails/november-04/accountspayablemanager-run-an-ap-helpdesk-queue-with-dated-ownership-2026-11-04.webp",
+    "thumbnail": "/thumbnails/november-04/accountspayablemanager-run-an-ap-helpdesk-queue-with-dated-ownership.webp",
     "sections": [
       {
         "heading": "The control this AP helpdesk response needs",
