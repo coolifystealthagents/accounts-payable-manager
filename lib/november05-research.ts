@@ -1,4 +1,4 @@
-export const november04ResearchPosts = [
+export const november05ResearchPosts = [
   {
     "slug": "accountspayablemanager-how-old-do-invoice-holds-become-before-release",
     "title": "How old do invoice holds become before release?",

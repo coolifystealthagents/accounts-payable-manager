@@ -1,4 +1,4 @@
-export const november04BlogPosts = [
+export const november05BlogPosts = [
   {
     "slug": "accountspayablemanager-review-a-vendor-statement-before-the-payment-run",
     "title": "Review a vendor statement before the payment run",
