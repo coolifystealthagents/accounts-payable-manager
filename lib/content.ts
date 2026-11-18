@@ -7,6 +7,7 @@ import { november04ResearchPosts } from './november04-research';
 import { november05BlogPosts } from './november05-blog';
 import { november10BlogPosts } from './november10-blog';
 import { november12BlogPosts } from './november12BlogPosts';
+import { november18BlogPosts } from './november18BlogPosts';
 import { november17BlogPosts } from './november17BlogPosts';
 import { november16BlogPosts } from './november16BlogPosts';
 import { november11BlogPosts } from './november11-blog';
@@ -17,6 +18,7 @@ import { november06BlogPosts } from './november06-blog';
 import { november05ResearchPosts } from './november05-research';
 import { november10ResearchPosts } from './november10-research';
 import { november12ResearchPosts } from './november12ResearchPosts';
+import { november18ResearchPosts } from './november18ResearchPosts';
 import { november17ResearchPosts } from './november17ResearchPosts';
 import { november16ResearchPosts } from './november16ResearchPosts';
 import { november11ResearchPosts } from './november11-research';
@@ -953,6 +955,7 @@ const legacyResearchPosts: ResearchPost[] = [
 
 export const blogPosts: BlogPost[] = [
   ...november12BlogPosts,
+  ...november18BlogPosts,
   ...november17BlogPosts,
   ...november16BlogPosts,
   ...november11BlogPosts,
@@ -970,6 +973,7 @@ export const blogPosts: BlogPost[] = [
   ...october27BlogPosts,...october26BlogPosts, ...october25BlogPosts, ...october22BlogPosts, ...october12BlogPosts, ...legacyBlogPosts];
 export const researchPosts: ResearchPost[] = [
   ...november12ResearchPosts,
+  ...november18ResearchPosts,
   ...november17ResearchPosts,
   ...november16ResearchPosts,
   ...november11ResearchPosts,
