@@ -8,7 +8,7 @@ export const november12BlogPosts = [
   "category": "Vendor records",
   "publishedAt": "2026-11-12",
   "readTime": "9 min read",
-  "thumbnail": "/thumbnails/november-12/accountspayablemanager-reconcile-a-vendor-deposit-against-the-final-invoice.webp",
+  "thumbnail": "/thumbnails/november-12/reconcile-a-vendor-deposit-against-the-final-invoice-for-the-next-review-cycle.webp",
   "sections": [
     {
       "heading": "The control this vendor deposit reconciliation needs",
@@ -95,7 +95,7 @@ export const november12BlogPosts = [
   "category": "Controls",
   "publishedAt": "2026-11-12",
   "readTime": "10 min read",
-  "thumbnail": "/thumbnails/november-12/accountspayablemanager-check-a-purchase-order-change-order-against-the-approval-matrix.webp",
+  "thumbnail": "/thumbnails/november-12/check-a-purchase-order-change-order-against-the-approval-matrix-for-the-next-review-cycle.webp",
   "sections": [
     {
       "heading": "The control this purchase order change order review needs",
@@ -182,7 +182,7 @@ export const november12BlogPosts = [
   "category": "Payment posting",
   "publishedAt": "2026-11-12",
   "readTime": "11 min read",
-  "thumbnail": "/thumbnails/november-12/accountspayablemanager-review-a-payment-batch-for-sanctions-screening-evidence.webp",
+  "thumbnail": "/thumbnails/november-12/review-a-payment-batch-for-sanctions-screening-evidence-for-the-next-review-cycle.webp",
   "sections": [
     {
       "heading": "The control this payment batch sanctions screening needs",
@@ -269,7 +269,7 @@ export const november12BlogPosts = [
   "category": "Card programs",
   "publishedAt": "2026-11-12",
   "readTime": "12 min read",
-  "thumbnail": "/thumbnails/november-12/accountspayablemanager-reconcile-a-credit-card-dispute-credit-to-the-original-charge.webp",
+  "thumbnail": "/thumbnails/november-12/reconcile-a-credit-card-dispute-credit-to-the-original-charge-for-the-next-review-cycle.webp",
   "sections": [
     {
       "heading": "The control this card dispute credit reconciliation needs",
@@ -356,7 +356,7 @@ export const november12BlogPosts = [
   "category": "Vendor records",
   "publishedAt": "2026-11-12",
   "readTime": "9 min read",
-  "thumbnail": "/thumbnails/november-12/accountspayablemanager-verify-a-vendor-insurance-certificate-before-onboarding.webp",
+  "thumbnail": "/thumbnails/november-12/verify-a-vendor-insurance-certificate-before-onboarding-for-the-next-review-cycle.webp",
   "sections": [
     {
       "heading": "The control this vendor insurance certificate review needs",
@@ -443,7 +443,7 @@ export const november12BlogPosts = [
   "category": "Tax",
   "publishedAt": "2026-11-12",
   "readTime": "10 min read",
-  "thumbnail": "/thumbnails/november-12/accountspayablemanager-record-a-use-tax-accrual-with-the-purchase-evidence.webp",
+  "thumbnail": "/thumbnails/november-12/record-a-use-tax-accrual-with-the-purchase-evidence-for-the-next-review-cycle.webp",
   "sections": [
     {
       "heading": "The control this use tax accrual review needs",
@@ -530,7 +530,7 @@ export const november12BlogPosts = [
   "category": "Intercompany",
   "publishedAt": "2026-11-12",
   "readTime": "11 min read",
-  "thumbnail": "/thumbnails/november-12/accountspayablemanager-reconcile-an-intercompany-invoice-to-the-settlement-account.webp",
+  "thumbnail": "/thumbnails/november-12/reconcile-an-intercompany-invoice-to-the-settlement-account-for-the-next-review-cycle.webp",
   "sections": [
     {
       "heading": "The control this intercompany invoice reconciliation needs",
@@ -617,7 +617,7 @@ export const november12BlogPosts = [
   "category": "Payment posting",
   "publishedAt": "2026-11-12",
   "readTime": "12 min read",
-  "thumbnail": "/thumbnails/november-12/accountspayablemanager-prepare-a-payment-run-exception-report-for-the-controller.webp",
+  "thumbnail": "/thumbnails/november-12/prepare-a-payment-run-exception-report-for-the-controller-for-the-next-review-cycle.webp",
   "sections": [
     {
       "heading": "The control this payment run exception reporting needs",

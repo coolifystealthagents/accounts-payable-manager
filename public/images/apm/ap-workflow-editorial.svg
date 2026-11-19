@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+  <defs>
+    <linearGradient id="desk" x1="97" y1="76" x2="1074" y2="827" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F6FC"/>
+      <stop offset="1" stop-color="#E9E5F4"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="346" y1="203" x2="752" y2="499" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDFCFF"/>
+      <stop offset="1" stop-color="#F1EFF8"/>
+    </linearGradient>
+    <filter id="shadow" x="115" y="107" width="1002" height="711" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#4939A6" stroke-opacity=".06"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="900" rx="38" fill="url(#desk)"/>
+  <rect width="1200" height="900" rx="38" fill="url(#grid)"/>
+  <ellipse cx="614" cy="727" rx="443" ry="52" fill="#1D1834" fill-opacity=".13" filter="url(#shadow)"/>
+
+  <!-- Laptop and orderly workflow dashboard -->
+  <g>
+    <rect x="277" y="145" width="530" height="385" rx="27" fill="#27213F"/>
+    <rect x="295" y="163" width="494" height="348" rx="15" fill="url(#screen)"/>
+    <path d="M295 178a15 15 0 0 1 15-15h464a15 15 0 0 1 15 15v29H295v-29Z" fill="#4939A6"/>
+    <circle cx="319" cy="185" r="4" fill="#D89352"/>
+    <circle cx="334" cy="185" r="4" fill="#F8F6FC" fill-opacity=".78"/>
+    <circle cx="349" cy="185" r="4" fill="#F8F6FC" fill-opacity=".52"/>
+    <rect x="317" y="230" width="154" height="20" rx="10" fill="#1D1834"/>
+    <rect x="317" y="260" width="107" height="8" rx="4" fill="#877AB7" fill-opacity=".55"/>
+
+    <rect x="317" y="291" width="207" height="185" rx="14" fill="#FFF" stroke="#DDD8EB"/>
+    <rect x="335" y="309" width="88" height="10" rx="5" fill="#4939A6" fill-opacity=".72"/>
+    <rect x="335" y="337" width="171" height="1.5" fill="#E7E3F0"/>
+    <circle cx="348" cy="359" r="8" fill="#E9E5F4"/>
+    <path d="m344 359 3 3 6-7" stroke="#4939A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="365" y="355" width="117" height="7" rx="3.5" fill="#5F5677" fill-opacity=".72"/>
+    <circle cx="348" cy="389" r="8" fill="#E9E5F4"/>
+    <path d="m344 389 3 3 6-7" stroke="#4939A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="365" y="385" width="101" height="7" rx="3.5" fill="#5F5677" fill-opacity=".72"/>
+    <circle cx="348" cy="419" r="8" fill="#F7E8D8"/>
+    <path d="M348 415v5m0 3v.1" stroke="#B66C2C" stroke-width="2" stroke-linecap="round"/>
+    <rect x="365" y="415" width="127" height="7" rx="3.5" fill="#5F5677" fill-opacity=".72"/>
+    <rect x="335" y="445" width="101" height="16" rx="8" fill="#E9E5F4"/>
+    <rect x="443" y="445" width="62" height="16" rx="8" fill="#F7E8D8"/>
+
+    <rect x="541" y="291" width="230" height="185" rx="14" fill="#FFF" stroke="#DDD8EB"/>
+    <rect x="559" y="309" width="102" height="10" rx="5" fill="#4939A6" fill-opacity=".72"/>
+    <path d="M565 438h179" stroke="#E7E3F0" stroke-width="1.5"/>
+    <path d="M575 420v-34m34 34v-57m34 57v-43m34 43v-74m34 74v-51" stroke="#8A7DCC" stroke-width="13" stroke-linecap="round"/>
+    <path d="m576 370 34-18 34 8 34-28 33 10" stroke="#D89352" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="576" cy="370" r="4" fill="#D89352"/>
+    <circle cx="610" cy="352" r="4" fill="#D89352"/>
+    <circle cx="644" cy="360" r="4" fill="#D89352"/>
+    <circle cx="678" cy="332" r="4" fill="#D89352"/>
+    <circle cx="711" cy="342" r="4" fill="#D89352"/>
+
+    <path d="M238 529h608l-60 32H302l-64-32Z" fill="#A9A2BF"/>
+    <path d="M302 561h484l-29 13H330l-28-13Z" fill="#7E7699"/>
+    <path d="M461 536h156l-15 13H477l-16-13Z" fill="#6E6688"/>
+    <path d="M496 539h88" stroke="#B6B0C8" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Invoice packet with traceable review marks -->
+  <g transform="rotate(7 906 463)">
+    <rect x="817" y="252" width="230" height="322" rx="13" fill="#D8D3E4"/>
+    <rect x="800" y="237" width="230" height="322" rx="13" fill="#FFF" stroke="#DAD5E8" stroke-width="2"/>
+    <path d="M800 250a13 13 0 0 1 13-13h204a13 13 0 0 1 13 13v43H800v-43Z" fill="#F2EFF8"/>
+    <rect x="823" y="260" width="77" height="9" rx="4.5" fill="#4939A6"/>
+    <rect x="823" y="314" width="111" height="11" rx="5.5" fill="#1D1834" fill-opacity=".82"/>
+    <rect x="823" y="338" width="177" height="6" rx="3" fill="#AAA4BB"/>
+    <rect x="823" y="352" width="151" height="6" rx="3" fill="#C5C0D1"/>
+    <path d="M823 378h184" stroke="#E7E3F0" stroke-width="2"/>
+    <rect x="823" y="397" width="61" height="7" rx="3.5" fill="#8C849F"/>
+    <rect x="959" y="397" width="48" height="7" rx="3.5" fill="#8C849F"/>
+    <rect x="823" y="421" width="96" height="6" rx="3" fill="#C5C0D1"/>
+    <rect x="959" y="421" width="48" height="6" rx="3" fill="#C5C0D1"/>
+    <rect x="823" y="445" width="109" height="6" rx="3" fill="#C5C0D1"/>
+    <rect x="959" y="445" width="48" height="6" rx="3" fill="#C5C0D1"/>
+    <rect x="823" y="469" width="84" height="6" rx="3" fill="#C5C0D1"/>
+    <rect x="959" y="469" width="48" height="6" rx="3" fill="#C5C0D1"/>
+    <path d="M823 489h184" stroke="#E7E3F0" stroke-width="2"/>
+    <circle cx="964" cy="523" r="19" fill="#F7E8D8"/>
+    <path d="m955 523 6 6 12-14" stroke="#A65F24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M831 522h74" stroke="#8A7DCC" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Connected handoff stages, using the site's copper review accent -->
+  <g>
+    <rect x="245" y="658" width="198" height="98" rx="18" fill="#FFF" stroke="#DAD5E8" stroke-width="2"/>
+    <circle cx="279" cy="691" r="13" fill="#E9E5F4"/>
+    <path d="M273 691h12m-6-6v12" stroke="#4939A6" stroke-width="2" stroke-linecap="round"/>
+    <rect x="303" y="686" width="107" height="8" rx="4" fill="#4939A6" fill-opacity=".72"/>
+    <rect x="267" y="718" width="142" height="6" rx="3" fill="#C5C0D1"/>
+
+    <path d="M450 707h42m-11-10 11 10-11 10" stroke="#D89352" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="504" y="658" width="198" height="98" rx="18" fill="#FFF" stroke="#DAD5E8" stroke-width="2"/>
+    <circle cx="538" cy="691" r="13" fill="#F7E8D8"/>
+    <path d="m532 691 4 4 8-9" stroke="#A65F24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="562" y="686" width="106" height="8" rx="4" fill="#4939A6" fill-opacity=".72"/>
+    <rect x="526" y="718" width="143" height="6" rx="3" fill="#C5C0D1"/>
+
+    <path d="M709 707h42m-11-10 11 10-11 10" stroke="#D89352" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="763" y="658" width="198" height="98" rx="18" fill="#4939A6"/>
+    <circle cx="797" cy="691" r="13" fill="#FFF" fill-opacity=".18"/>
+    <path d="m791 691 4 4 8-9" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="821" y="686" width="102" height="8" rx="4" fill="#FFF" fill-opacity=".9"/>
+    <rect x="785" y="718" width="138" height="6" rx="3" fill="#FFF" fill-opacity=".42"/>
+  </g>
+
+  <circle cx="1015" cy="688" r="38" fill="#F7E8D8"/>
+  <path d="M1001 688h28m-8-9 9 9-9 9" stroke="#A65F24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1034 688h12" stroke="#A65F24" stroke-width="3" stroke-linecap="round"/>
+</svg>
