@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ArticleSidebar } from '@/components/ArticleSidebar';
 import { MobileToc } from '@/components/MobileToc';
 import { blogPosts, blogBySlug } from '@/lib/content';
 import { site } from '@/lib/site';
+import { media } from '@/lib/media';
 
 const slugify = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 const dateLabel = (value: string) => new Date(`${value}T00:00:00Z`).toLocaleDateString('en-US', { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' });
@@ -14,7 +16,7 @@ export function generateStaticParams() { return blogPosts.map(({ slug }) => ({ s
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const post = blogBySlug(slug);
-  return post ? { title: post.title, description: post.description, alternates: { canonical: `/blog/${post.slug}` }, openGraph: { images: [post.thumbnail || `/visual/${post.slug}`] } } : {};
+  return post ? { title: post.title, description: post.description, alternates: { canonical: `/blog/${post.slug}` }, openGraph: { images: [post.thumbnail || media.blogHero.src] } } : {};
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -36,7 +38,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <p>{post.description}</p>
           <p className="meta">{site.name} Editorial Team · <span><time dateTime={post.publishedAt}>{`Published ${dateLabel(post.publishedAt)}`}</time></span> · {post.readTime}</p>
         </div>
-        <img className="route-hero-image" src={post.thumbnail || `/visual/${post.slug}`} alt={`Accounts payable workflow illustration for ${post.title}`} />
+        <figure className="route-hero-image" data-reveal-media><Image src={post.thumbnail || media.blogHero.src} alt={`Accounts payable workflow illustration for ${post.title}`} fill preload sizes="(max-width: 1050px) 90vw, 44vw" /></figure>
       </header>
       <section className="content-wrap article-layout">
         <div>

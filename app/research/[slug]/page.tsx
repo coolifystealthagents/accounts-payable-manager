@@ -1,10 +1,13 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ArticleSidebar } from '@/components/ArticleSidebar';
 import { MobileToc } from '@/components/MobileToc';
 import { researchPosts, researchBySlug } from '@/lib/content';
 import { site } from '@/lib/site';
+import { ServiceIcon } from '@/components/Icons';
+import { media } from '@/lib/media';
 
 const slugify = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 const dateLabel = (value: string) => new Date(`${value}T00:00:00Z`).toLocaleDateString('en-US', { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' });
@@ -14,7 +17,7 @@ export function generateStaticParams() { return researchPosts.map(({ slug }) => 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const post = researchBySlug(slug);
-  return post ? { title: post.title, description: post.summary, alternates: { canonical: `/research/${post.slug}` }, openGraph: { images: [post.thumbnail || `/visual/${post.slug}`] } } : {};
+  return post ? { title: post.title, description: post.summary, alternates: { canonical: `/research/${post.slug}` }, openGraph: { images: [post.thumbnail || media.researchHero.src] } } : {};
 }
 
 export default async function ResearchPostPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -45,7 +48,7 @@ export default async function ResearchPostPage({ params }: { params: Promise<{ s
           <p>{post.summary}</p>
           <p className="meta">{site.name} Editorial Team · <span><time dateTime={post.publishedAt}>{`Published ${dateLabel(post.publishedAt)}`}</time></span></p>
         </div>
-        <img className="route-hero-image" src={post.thumbnail || `/visual/${post.slug}`} alt={`Accounts payable research illustration for ${post.title}`} />
+        <figure className="route-hero-image" data-reveal-media><Image src={post.thumbnail || media.researchHero.src} alt={`Accounts payable research illustration for ${post.title}`} fill preload sizes="(max-width: 1050px) 90vw, 44vw" /></figure>
       </header>
       <section className="content-wrap article-layout">
         <div>
@@ -54,7 +57,7 @@ export default async function ResearchPostPage({ params }: { params: Promise<{ s
           <p className="research-finding"><strong>Finding:</strong> {post.finding}</p>
           {sections.map((section) => <section key={section.heading} id={slugify(section.heading)}><h2>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>)}
           <section id="method-note"><h2>Method note</h2><p>{post.methodology || 'This brief translates recurring control themes from the cited public sources into a practical administrative workflow. It does not claim a universal staffing ratio, performance target, accounting conclusion, or compliance determination.'}</p></section>
-          <section className="sources" id="sources"><h2>Sources</h2><ol>{post.sources.map((source) => <li key={source.url}><a href={source.url} rel="noopener noreferrer">{source.label}</a></li>)}</ol></section>
+          <section className="sources" id="sources"><h2>Sources</h2><ul className="source-list">{post.sources.map((source) => <li key={source.url}><span className="source-icon"><ServiceIcon name="invoice" /></span><a href={source.url} rel="noopener noreferrer">{source.label}</a></li>)}</ul></section>
           {post.faq?.length ? <section id="common-questions"><h2>Common questions answered</h2>{post.faq.map((item) => <div key={item.q}><h3>{item.q}</h3><p>{item.a}</p></div>)}</section> : null}
           <section id="next-step"><h2>Apply the research to your workflow</h2><p>Bring one defined queue, its source records, current owners, approval boundary, and recurring exceptions. We can help turn that evidence into a focused support role.</p><Link id="cta-research-final-bookcall" className="button primary" href="/contact-us">Discuss your workflow in a free call</Link></section>
           </article>

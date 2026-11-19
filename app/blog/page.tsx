@@ -1,7 +1,41 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import Image from 'next/image';
 import { blogPosts } from '@/lib/content';
 import { media } from '@/lib/media';
+import { CategoryFilter } from '@/components/CategoryFilter';
+import { EditorialCard } from '@/components/EditorialCard';
+
 export const metadata: Metadata = { title: 'Blog', description: 'Practical guides for controlled accounts payable preparation, delegation, and review.', alternates: { canonical: '/blog' } };
-export default function BlogPage() { const dateLabel = (value: string) => new Date(`${value}T00:00:00Z`).toLocaleDateString('en-US', { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' }); return <main id="main-content" tabIndex={-1}><header className="page-hero editorial-hero"><div><p className="eyebrow">Practical field notes</p><h1>Clearer payable operations.</h1><p>Detailed guides for finance teams that want controlled preparation without losing evidence, ownership, or approval authority.</p></div><figure className="route-hero-image" data-reveal-media><Image src={media.blogHero.src} alt={media.blogHero.alt} fill priority sizes="(max-width: 1050px) 88vw, 44vw" style={{ objectPosition: media.blogHero.position }} /></figure></header><section className="content-wrap"><div className="category-navigation" role="group" aria-label="Blog categories">{['All', ...new Set(blogPosts.map((post) => post.category))].map((category) => <span className="pill" key={category}>{category} ({category === 'All' ? blogPosts.length : blogPosts.filter((post) => post.category === category).length})</span>)}</div><div className="article-grid">{blogPosts.map((post) => <Link className="article-card" href={`/blog/${post.slug}`} key={post.slug}><img className="content-thumbnail" src={post.thumbnail || `/visual/${post.slug}`} alt={`Illustration for ${post.title}`} /><span className="pill">{post.category}</span><h2>{post.title}</h2><p>{post.description}</p><p className="meta"><time dateTime={post.publishedAt}>{`Published ${dateLabel(post.publishedAt)}`}</time> · {post.readTime}</p><span className="text-link">Read article</span></Link>)}</div></section></main>; }
+type BlogPageProps = { searchParams: Promise<Record<string, string | string[] | undefined>> };
+
+export default async function BlogPage({ searchParams }: BlogPageProps) {
+  const categories = [...new Set(blogPosts.map((post) => post.category))];
+  const params = await searchParams;
+  const requestedCategory = Array.isArray(params.category) ? params.category[0] : params.category;
+  const selectedCategory = requestedCategory && categories.includes(requestedCategory) ? requestedCategory : '';
+  const filteredPosts = selectedCategory ? blogPosts.filter((post) => post.category === selectedCategory) : blogPosts;
+  const dateLabel = (value: string) => new Date(`${value}T00:00:00Z`).toLocaleDateString('en-US', { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' });
+
+  return (
+    <main id="main-content" tabIndex={-1}>
+      <header className="page-hero editorial-hero">
+        <div><p className="eyebrow">Practical field notes</p><h1>Clearer payable operations.</h1><p>Detailed guides for finance teams that want controlled preparation without losing evidence, ownership, or approval authority.</p></div>
+        <figure className="route-hero-image" data-reveal-media><Image src={media.blogHero.src} alt={media.blogHero.alt} fill preload sizes="(max-width: 1050px) 88vw, 44vw" style={{ objectPosition: media.blogHero.position }} /></figure>
+      </header>
+      <section className="content-wrap">
+        <CategoryFilter
+          basePath="/blog"
+          queryKey="category"
+          label="Blog categories"
+          allLabel="All"
+          total={blogPosts.length}
+          selected={selectedCategory}
+          items={categories.map((name) => ({ name, count: blogPosts.filter((post) => post.category === name).length }))}
+        />
+        <div className="article-grid editorial-card-grid">
+          {filteredPosts.map((post) => <EditorialCard key={post.slug} href={`/blog/${post.slug}`} thumbnail={post.thumbnail || media.blogHero.src} imageAlt={`Accounts payable guide illustration for ${post.title}`} title={post.title} summary={post.description} category={post.category} publishedAt={post.publishedAt} publishedLabel={dateLabel(post.publishedAt)} readTime={post.readTime} actionLabel="Read article" />)}
+        </div>
+      </section>
+    </main>
+  );
+}

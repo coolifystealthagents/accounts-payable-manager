@@ -2,7 +2,7 @@ export function ArrowIcon() { return <svg viewBox="0 0 24 24" aria-hidden="true"
 export function CheckIcon() { return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6" /></svg>; }
 export function SparkIcon() { return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18M6 6l12 12M18 6 6 18" /></svg>; }
 
-type ServiceIconName = 'invoice' | 'match' | 'vendor' | 'approval' | 'payment' | 'report';
+export type ServiceIconName = 'invoice' | 'match' | 'vendor' | 'approval' | 'payment' | 'report';
 
 export function ServiceIcon({ name }: { name: ServiceIconName }) {
   const paths: Record<ServiceIconName, React.ReactNode> = {
@@ -15,4 +15,17 @@ export function ServiceIcon({ name }: { name: ServiceIconName }) {
   };
 
   return <svg className="service-icon-art" viewBox="0 0 24 24" aria-hidden="true">{paths[name]}</svg>;
+}
+
+const serviceIconBySlug: Record<string, ServiceIconName> = {
+  'invoice-intake': 'invoice',
+  'three-way-match-support': 'match',
+  'vendor-record-upkeep': 'vendor',
+  'approval-routing': 'approval',
+  'payment-run-preparation': 'payment',
+  'ap-reporting-support': 'report',
+};
+
+export function ServiceRoleIcon({ slug }: { slug: string }) {
+  return <ServiceIcon name={serviceIconBySlug[slug] ?? 'report'} />;
 }
