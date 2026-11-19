@@ -6,7 +6,7 @@ import { FooterNav, PrimaryHeaderNav } from '@/components/SiteNavigation';
 function SubsidiaryBrand({ inverse = false }: { inverse?: boolean }) {
   return (
     <Link className={`brand${inverse ? ' inverse' : ''}`} href="/" aria-label={`${site.name} home`}>
-      <Image src="/logo.svg" alt="" width={42} height={42} priority />
+      <Image src="/logo.svg" alt="" width={42} height={42} />
       <span>{site.name}</span>
     </Link>
   );

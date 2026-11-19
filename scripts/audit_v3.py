@@ -17,13 +17,29 @@ reviews = read("lib/reviews.ts")
 review_component = read("components/Reviews.tsx")
 layout = read("app/layout.tsx")
 service_page = read("app/services/[slug]/page.tsx")
+service_index = read("app/services/page.tsx")
+home_page = read("components/Marketing.tsx")
+blog_index = read("app/blog/page.tsx")
+research_index = read("app/research/page.tsx")
 blog_page = read("app/blog/[slug]/page.tsx")
 research_page = read("app/research/[slug]/page.tsx")
+editorial_card = read("components/EditorialCard.tsx")
 canonical_proxy = read("proxy.ts")
+thumbnail_references = []
+for library_file in (ROOT / "lib").glob("*.ts"):
+    thumbnail_references.extend(
+        (library_file, value)
+        for value in re.findall(r"[\"']thumbnail[\"']\s*:\s*[\"']([^\"']+)[\"']", library_file.read_text(encoding="utf-8"))
+    )
+missing_thumbnail_paths = [
+    f"{source.relative_to(ROOT)} -> public/{value.lstrip('/')}"
+    for source, value in thumbnail_references
+    if not (ROOT / "public" / value.lstrip("/")).is_file()
+]
 
 contracts = {
     "lead posts to protected endpoint": "fetch('/api/submit-lead'" in lead,
-    "lead success invokes ACR tracking": "window.acrTracker?.trackLead" in lead,
+    "lead keeps the native submit event available to ACR tracking": "onSubmit={submit}" in lead and "ACR captures the native submit event once." in lead and "acrtracking.stealthagents.us/v1/tracker.js" in layout,
     "lead success routes to thank-you": "router.push('/thank-you')" in lead,
     "honeypot remains enforced": "form.get('website_url')" in lead_api,
     "full contact source contract remains prefix based": "source.startsWith('contact-page')" in lead_api,
@@ -42,6 +58,15 @@ contracts = {
     "review rail renders each approved record once": review_component.count("stealthAgentsReviews.map") == 1 and "clone" not in review_component,
     "contact uses official Bacolod team asset": "/brand/stealth-agents-team-bacolod.png" in read("lib/media.ts") and "media.officialTeam" in contact,
     "service template contains workflow, controls, boundaries, examples and FAQs": all(token in service_page for token in ("workflow", "controls", "boundaries", "scenarios", "faqs")),
+    "service directory uses role icons instead of decorative indexes": "ServiceRoleIcon" in service_index and "service-index" not in service_index,
+    "service workflow keeps order while showing icons": 'className="service-workflow-list"' in service_page and "ServiceIcon" in service_page and "index + 1" not in service_page,
+    "homepage workflow keeps order while showing icons": 'className="method-steps"' in home_page and "ServiceIcon" in home_page,
+    "role guidance uses an ordered icon list": 'className="guidance-list"' in service_index and "guidance-icon" in service_index and "counter-reset:guidance" not in service_index,
+    "starting-service choices use unordered service icons": "decision-options" in service_index and "decision-option-icon" in service_index,
+    "blog category filters expose selected routes": "CategoryFilter" in blog_index and "searchParams" in blog_index,
+    "research category filters expose selected routes": "CategoryFilter" in research_index and "searchParams" in research_index,
+    "editorial cards use optimized images and accessible text links": "next/image" in editorial_card and "<h2><Link" in editorial_card,
+    "research sources are not presented as ordered steps": 'className="source-list"' in research_page and "<ol>" not in research_page,
     "blog template uses generated TOC sidebar": "ArticleSidebar" in blog_page and "tocItems" in blog_page,
     "research template uses generated TOC sidebar": "ArticleSidebar" in research_page and "tocItems" in research_page,
     "canonical proxy uses fixed production allowlist and preserves path and query": all(token in canonical_proxy for token in (
@@ -55,6 +80,7 @@ contracts = {
         '308',
     )),
     "design registry exists": (ROOT / "design-registry.json").is_file(),
+    "all declared article thumbnail paths resolve to local assets": not missing_thumbnail_paths,
     "every route renderer exposes the shared skip target": all('id="main-content"' in read(path) for path in (
         "components/Marketing.tsx", "app/about/page.tsx", "app/blog/page.tsx", "app/blog/[slug]/page.tsx",
         "app/contact-us/page.tsx", "app/services/page.tsx", "app/services/[slug]/page.tsx",
@@ -66,6 +92,8 @@ contracts = {
 failed = [name for name, passed in contracts.items() if not passed]
 for name, passed in contracts.items():
     print(f"{'PASS' if passed else 'FAIL'}: {name}")
+for path in missing_thumbnail_paths:
+    print(f"FAIL: missing thumbnail asset {path}")
 if failed:
     raise SystemExit(f"V3 contracts failed: {', '.join(failed)}")
 print(f"PASS: {len(contracts)} focused V3 contracts")

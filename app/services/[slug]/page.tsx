@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { site } from '@/lib/site';
 import { serviceBySlug } from '@/lib/content';
 import { serviceMedia } from '@/lib/media';
+import { ServiceIcon, type ServiceIconName } from '@/components/Icons';
 
 const detail: Record<string, {
   audience: string;
@@ -85,6 +86,8 @@ const detail: Record<string, {
   }
 };
 
+const workflowIcons: ServiceIconName[] = ['invoice', 'match', 'approval', 'report'];
+
 export function generateStaticParams() { return site.services.map(({ slug }) => ({ slug })); }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -109,12 +112,12 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <p>{service.short}</p>
           <Link id={`cta-services-${service.slug}-bookcall`} className="button primary" href="/contact-us">Discuss this role in a free call</Link>
         </div>
-        <figure className="route-hero-image" data-reveal-media><Image src={image.src} alt={image.alt} fill priority sizes="(max-width: 1050px) 88vw, 44vw" style={{ objectPosition: image.position }} /></figure>
+        <figure className="route-hero-image" data-reveal-media><Image src={image.src} alt={image.alt} fill preload sizes="(max-width: 1050px) 88vw, 44vw" style={{ objectPosition: image.position }} /></figure>
       </header>
       <section className="content-wrap service-prose">
         <section className="service-context"><div><p className="eyebrow">Who needs this role</p><h2>A focused role for a visible queue.</h2></div><div><p>{d.audience}</p><p>{d.problem}</p><h3>Work included in the starting scope</h3><ul className="scope-list">{service.tasks.map((item) => <li key={item}>{item}</li>)}</ul></div></section>
         <section className="input-output-ledger"><header><h2>The handoff, made reviewable</h2><p>Inputs stay traceable to approved systems; outputs are prepared for an accountable reviewer.</p></header><div><h3>Inputs the role needs</h3><ul>{d.inputs.map((item) => <li key={item}>{item}</li>)}</ul></div><div><h3>Outputs your team can review</h3><ul>{d.outputs.map((item) => <li key={item}>{item}</li>)}</ul></div></section>
-        <section className="workflow-section"><h2>How the workflow operates</h2><div className="workflow-list">{d.workflow.map(([title, copy], index) => <article key={title}><span>0{index + 1}</span><div><h3>{title}</h3><p>{copy}</p></div></article>)}</div></section>
+        <section className="workflow-section"><h2>How the workflow operates</h2><ol className="service-workflow-list" aria-label="Workflow steps">{d.workflow.map(([title, copy], index) => <li key={title}><span className="workflow-step-icon"><ServiceIcon name={workflowIcons[index]} /></span><div><h3>{title}</h3><p>{copy}</p></div></li>)}</ol></section>
         <section className="control-matrix"><div><h2>Quality checks</h2><ul>{d.controls.map((item) => <li key={item}>{item}</li>)}</ul></div><div><h2>Human decision boundaries</h2><ul>{d.boundaries.map((item) => <li key={item}>{item}</li>)}</ul></div></section>
         <section className="scenario-section"><h2>Starting scenarios</h2><p>Begin where the handoff is already visible and the accountable owner can review the prepared work.</p><div className="scenario-grid">{d.scenarios.map(([title, copy]) => <article key={title}><h3>{title}</h3><p>{copy}</p></article>)}</div></section>
         <section className="service-faq"><h2>Questions about this role</h2>{d.faqs.map(([q, a]) => <details key={q}><summary>{q}</summary><p>{a}</p></details>)}</section>

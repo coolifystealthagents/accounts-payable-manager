@@ -8,7 +8,7 @@ export const november12ResearchPosts = [
   "cluster": "Quality",
   "publishedAt": "2026-11-12",
   "finding": "A deposit review should report the applied credit and any open balance, not only the original payment The follow-up should state what changed.",
-  "thumbnail": "/thumbnails/november-12/accountspayablemanager-how-often-do-vendor-deposits-match-the-final-invoice.webp",
+  "thumbnail": "/thumbnails/november-12/how-often-do-vendor-deposits-match-the-final-invoice-in-the-next-review-cycle.webp",
   "sections": [
     {
       "heading": "Question and scope",
@@ -90,7 +90,7 @@ export const november12ResearchPosts = [
   "cluster": "Controls",
   "publishedAt": "2026-11-12",
   "finding": "A change order is reviewable when the revised scope, approver, and budget impact are visible together The follow-up should state what changed.",
-  "thumbnail": "/thumbnails/november-12/accountspayablemanager-do-po-change-orders-carry-the-right-approval.webp",
+  "thumbnail": "/thumbnails/november-12/do-po-change-orders-carry-the-right-approval-in-the-next-review-cycle.webp",
   "sections": [
     {
       "heading": "Question and scope",
@@ -172,7 +172,7 @@ export const november12ResearchPosts = [
   "cluster": "Controls",
   "publishedAt": "2026-11-12",
   "finding": "Screening evidence needs the result, the date, and the reviewer, not only a cleared status The follow-up should state what changed.",
-  "thumbnail": "/thumbnails/november-12/accountspayablemanager-does-a-payment-batch-include-sanctions-screening-evidence.webp",
+  "thumbnail": "/thumbnails/november-12/does-a-payment-batch-include-sanctions-screening-evidence-in-the-next-review-cycle.webp",
   "sections": [
     {
       "heading": "Question and scope",
@@ -254,7 +254,7 @@ export const november12ResearchPosts = [
   "cluster": "Quality",
   "publishedAt": "2026-11-12",
   "finding": "A dispute credit is supportable when the issuer credit, original charge, and case outcome point to the same transaction The follow-up should state what changed.",
-  "thumbnail": "/thumbnails/november-12/accountspayablemanager-can-card-dispute-credits-be-matched-to-the-original-charge.webp",
+  "thumbnail": "/thumbnails/november-12/can-card-dispute-credits-be-matched-to-the-original-charge-in-the-next-review-cycle.webp",
   "sections": [
     {
       "heading": "Question and scope",
@@ -336,7 +336,7 @@ export const november12ResearchPosts = [
   "cluster": "Quality",
   "publishedAt": "2026-11-12",
   "finding": "A certificate is supportable when the coverage, limit, and expiry are checked against the contract The follow-up should state what changed.",
-  "thumbnail": "/thumbnails/november-12/accountspayablemanager-are-vendor-insurance-certificates-current-at-onboarding.webp",
+  "thumbnail": "/thumbnails/november-12/are-vendor-insurance-certificates-current-at-onboarding-in-the-next-review-cycle.webp",
   "sections": [
     {
       "heading": "Question and scope",
@@ -418,7 +418,7 @@ export const november12ResearchPosts = [
   "cluster": "Controls",
   "publishedAt": "2026-11-12",
   "finding": "A use tax accrual is reviewable when the purchase, rate, and reversal date are visible together The follow-up should state what changed.",
-  "thumbnail": "/thumbnails/november-12/accountspayablemanager-does-a-use-tax-accrual-have-purchase-support.webp",
+  "thumbnail": "/thumbnails/november-12/does-a-use-tax-accrual-have-purchase-support-in-the-next-review-cycle.webp",
   "sections": [
     {
       "heading": "Question and scope",
@@ -500,7 +500,7 @@ export const november12ResearchPosts = [
   "cluster": "Quality",
   "publishedAt": "2026-11-12",
   "finding": "An intercompany invoice is supportable when the entity, invoice, and settlement entry agree The follow-up should state what changed.",
-  "thumbnail": "/thumbnails/november-12/accountspayablemanager-can-intercompany-invoices-be-reconciled-to-the-settlement-account.webp",
+  "thumbnail": "/thumbnails/november-12/can-intercompany-invoices-be-reconciled-to-the-settlement-account-in-the-next-review-cycle.webp",
   "sections": [
     {
       "heading": "Question and scope",
