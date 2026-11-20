@@ -1,33 +1,31 @@
 'use client';
 
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+import { useEffect } from 'react';
 
 export function MotionLayer() {
-  useGSAP(() => {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || typeof IntersectionObserver === 'undefined') return;
 
-    gsap.utils.toArray<HTMLElement>('[data-reveal-media]').forEach((frame) => {
-      const image = frame.querySelector('img');
-      gsap.fromTo(frame, { clipPath: 'inset(0 0 18% 0)' }, {
-        clipPath: 'inset(0 0 0% 0)',
-        duration: 1,
-        ease: 'power2.out',
-        scrollTrigger: { trigger: frame, start: 'top 86%', once: true }
+    const frames = [...document.querySelectorAll<HTMLElement>('[data-reveal-media]')];
+    if (!frames.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-revealed');
+        observer.unobserve(entry.target);
       });
-      if (image) {
-        gsap.fromTo(image, { scale: 1.08 }, {
-          scale: 1,
-          duration: 1.2,
-          ease: 'power2.out',
-          scrollTrigger: { trigger: frame, start: 'top 86%', once: true }
-        });
-      }
-    });
-  });
+    }, { rootMargin: '0px 0px -14% 0px' });
+
+    document.documentElement.classList.add('motion-reveals-enabled');
+    frames.forEach((frame) => observer.observe(frame));
+
+    return () => {
+      observer.disconnect();
+      document.documentElement.classList.remove('motion-reveals-enabled');
+      frames.forEach((frame) => frame.classList.remove('is-revealed'));
+    };
+  }, []);
 
   return null;
 }
