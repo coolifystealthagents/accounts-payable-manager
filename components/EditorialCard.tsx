@@ -16,7 +16,7 @@ export type EditorialCardProps = {
 
 export function EditorialCard({ href, thumbnail, imageAlt, title, summary, category, publishedAt, publishedLabel, readTime, actionLabel }: EditorialCardProps) {
   return (
-    <article className="editorial-card">
+    <article className="editorial-card" data-category={category}>
       <div className="editorial-card-image">
         <Image src={thumbnail} alt={imageAlt} fill unoptimized={thumbnail.startsWith('/visual/')} sizes="(max-width: 650px) 90vw, (max-width: 900px) 44vw, 30vw" />
       </div>

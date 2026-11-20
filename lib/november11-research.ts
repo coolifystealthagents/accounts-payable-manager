@@ -410,7 +410,7 @@ export const november11ResearchPosts = [
     ]
   },
   {
-    "slug": "accountspayablemanager-does-a-use-tax-accrual-have-purchase-support",
+    "slug": "accountspayablemanager-does-a-use-tax-accrual-have-purchase-support-2026-11-11",
     "title": "Does a use tax accrual have purchase support?",
     "summary": "A use tax accrual review that keeps the purchase and jurisdiction evidence together.",
     "cluster": "Controls",
