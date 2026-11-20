@@ -3,3 +3,12 @@
 @media(max-width:760px){.contact-container{width:min(90vw,640px)}.contact-first-fold{gap:2rem}.contact-intro h1{font-size:clamp(2.8rem,13vw,4.2rem)}.contact-form-card .lead-form{grid-template-columns:1fr}.contact-form-card .lead-form .form-wide,.contact-form-card .lead-form label:nth-of-type(11),.contact-form-card .lead-form button,.lead-form .form-help{grid-column:1}.review-heading-row{display:block}.review-heading-row>p{margin:.5rem 0;max-width:none}.review-card{width:260px}.credibility-grid{grid-template-columns:1fr}.team-photo{min-height:330px}.official-team-plate{left:.75rem;right:.75rem;bottom:.75rem;justify-content:center}.step-grid,.path-grid{grid-template-columns:1fr}.contact-section{padding:4.5rem 0}}
 @media(prefers-reduced-motion:reduce){.review-track{transform:none!important;will-change:auto;display:grid;grid-template-columns:1fr 1fr;width:auto}.review-window{overflow:visible;mask-image:none}.review-card{width:auto}}
 @media(max-width:560px) and (prefers-reduced-motion:reduce){.review-track{grid-template-columns:1fr}}
+
+/* Keep the official team image inside its grid track and separate it from the copy. */
+.credibility-grid>.team-photo{width:100%;min-width:0;min-height:0}
+.credibility-grid>div{min-width:0}
+@media(max-width:1050px){
+  .credibility-grid{grid-template-columns:minmax(0,1fr);gap:clamp(2rem,5vw,3rem)}
+  .credibility-grid>.team-photo{min-height:clamp(360px,54vw,520px)}
+}
+@media(max-width:760px){.credibility-grid>.team-photo{min-height:330px}}
