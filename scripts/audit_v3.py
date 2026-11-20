@@ -25,6 +25,8 @@ blog_page = read("app/blog/[slug]/page.tsx")
 research_page = read("app/research/[slug]/page.tsx")
 editorial_card = read("components/EditorialCard.tsx")
 category_filter = read("components/CategoryFilter.tsx")
+motion_layer = read("components/MotionLayer.tsx")
+package_manifest = read("package.json")
 canonical_proxy = read("proxy.ts")
 thumbnail_references = []
 for library_file in (ROOT / "lib").glob("*.ts"):
@@ -82,6 +84,8 @@ contracts = {
     "category filters update query URLs and support browser back": "window.history.pushState" in category_filter and "popstate" in category_filter,
     "category filters hide nonmatching server-rendered cards": "card.hidden" in category_filter and "data-category={category}" in editorial_card,
     "editorial cards use optimized images and accessible text links": "next/image" in editorial_card and "<h2><Link" in editorial_card,
+    "media reveals use native observation and honor reduced motion": "IntersectionObserver" in motion_layer and "prefers-reduced-motion: reduce" in motion_layer and "gsap" not in motion_layer.lower(),
+    "GSAP is not included in site dependencies": '"gsap"' not in package_manifest and '"@gsap/react"' not in package_manifest,
     "research sources are not presented as ordered steps": 'className="source-list"' in research_page and "<ol>" not in research_page,
     "blog template uses generated TOC sidebar": "ArticleSidebar" in blog_page and "tocItems" in blog_page,
     "research template uses generated TOC sidebar": "ArticleSidebar" in research_page and "tocItems" in research_page,
