@@ -103,6 +103,7 @@ html{scroll-padding-top:104px}.skip-link{position:fixed;left:1rem;top:-5rem;z-in
 .category-navigation .category-chip.is-active{border-color:var(--primary);background:var(--primary);color:#fff}
 .editorial-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:1fr;gap:1.25rem;align-items:stretch}
 .editorial-card{display:flex;min-width:0;height:100%;flex-direction:column;overflow:hidden;border:1px solid color-mix(in srgb,var(--ink) 16%,transparent);border-radius:18px;background:#fff;box-shadow:0 10px 28px color-mix(in srgb,var(--ink) 7%,transparent);transition:transform .2s ease,box-shadow .2s ease}
+.editorial-card[hidden]{display:none!important}
 .editorial-card:hover{transform:translateY(-2px);box-shadow:0 16px 34px color-mix(in srgb,var(--ink) 12%,transparent)}
 .editorial-card-image{position:relative;display:block;flex:none;overflow:hidden;aspect-ratio:16/9;background:color-mix(in srgb,var(--secondary) 14%,white)}
 .editorial-card-image img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .4s ease}

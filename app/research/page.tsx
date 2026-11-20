@@ -6,14 +6,8 @@ import { CategoryFilter } from '@/components/CategoryFilter';
 import { EditorialCard } from '@/components/EditorialCard';
 
 export const metadata: Metadata = { title: 'Research', description: 'Source-led operational research for leaders designing controlled accounts payable support roles.', alternates: { canonical: '/research' } };
-type ResearchPageProps = { searchParams: Promise<Record<string, string | string[] | undefined>> };
-
-export default async function ResearchPage({ searchParams }: ResearchPageProps) {
+export default function ResearchPage() {
   const clusters = [...new Set(researchPosts.map((post) => post.cluster))];
-  const params = await searchParams;
-  const requestedCluster = Array.isArray(params.cluster) ? params.cluster[0] : params.cluster;
-  const selectedCluster = requestedCluster && clusters.includes(requestedCluster) ? requestedCluster : '';
-  const filteredPosts = selectedCluster ? researchPosts.filter((post) => post.cluster === selectedCluster) : researchPosts;
   const dateLabel = (value: string) => new Date(`${value}T00:00:00Z`).toLocaleDateString('en-US', { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' });
 
   return (
@@ -29,12 +23,11 @@ export default async function ResearchPage({ searchParams }: ResearchPageProps) 
           label="Research categories"
           allLabel="All topics"
           total={researchPosts.length}
-          selected={selectedCluster}
           items={clusters.map((name) => ({ name, count: researchPosts.filter((post) => post.cluster === name).length }))}
-        />
-        <div className="content-grid editorial-card-grid">
-          {filteredPosts.map((post) => <EditorialCard key={post.slug} href={`/research/${post.slug}`} thumbnail={post.thumbnail || media.researchHero.src} imageAlt={`Accounts payable research illustration for ${post.title}`} title={post.title} summary={post.summary} category={post.cluster} publishedAt={post.publishedAt} publishedLabel={dateLabel(post.publishedAt)} actionLabel="Review the brief" />)}
-        </div>
+          gridClassName="content-grid editorial-card-grid"
+        >
+          {researchPosts.map((post) => <EditorialCard key={post.slug} href={`/research/${post.slug}`} thumbnail={post.thumbnail || media.researchHero.src} imageAlt={`Accounts payable research illustration for ${post.title}`} title={post.title} summary={post.summary} category={post.cluster} publishedAt={post.publishedAt} publishedLabel={dateLabel(post.publishedAt)} actionLabel="Review the brief" />)}
+        </CategoryFilter>
       </section>
     </main>
   );
