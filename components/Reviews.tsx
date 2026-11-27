@@ -48,15 +48,15 @@ export function ReviewMarquee() {
       previous = now;
       frame = requestAnimationFrame(tick);
     };
-    rail.addEventListener('pointerenter', pause);
-    rail.addEventListener('pointerleave', resume);
+    
+    
     rail.addEventListener('focusin', pause);
     rail.addEventListener('focusout', resume);
     frame = requestAnimationFrame(tick);
     return () => {
       cancelAnimationFrame(frame);
-      rail.removeEventListener('pointerenter', pause);
-      rail.removeEventListener('pointerleave', resume);
+      
+      
       rail.removeEventListener('focusin', pause);
       rail.removeEventListener('focusout', resume);
       rail.style.transform = '';

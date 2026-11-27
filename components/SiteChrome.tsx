@@ -23,7 +23,7 @@ function PoweredBy({ inverse = false }: { inverse?: boolean }) {
 
 export function Header() {
   return (
-    <header className="site-header">
+    <header data-site-header="sticky" className="site-header">
       <SubsidiaryBrand />
       <PrimaryHeaderNav />
       <PoweredBy />
@@ -33,14 +33,14 @@ export function Header() {
 
 export function Footer() {
   return (
-    <footer className="site-footer">
+    <footer data-site-footer="true" className="site-footer">
       <div className="footer-brand">
         <SubsidiaryBrand inverse />
         <p>Specialist remote staff for {site.audience}.</p>
         <PoweredBy inverse />
       </div>
       <FooterNav />
-      <p className="copyright">© {new Date().getFullYear()} {site.name}</p>
+      <section className="site-parent-company" aria-label="Powered by StealthAgents"><a className="site-parent-logo" href="https://stealthagents.com/" aria-label="Visit StealthAgents"><img src="/stealthagents-parent-logo.png" alt="StealthAgents" width="158" height="53" loading="lazy" /></a><div><h2>Powered by StealthAgents</h2><p>StealthAgents recruits and supports the remote professionals behind our services, from matching and onboarding to ongoing team support.</p><a className="site-parent-link" href="https://stealthagents.com/">Explore StealthAgents ↗</a></div></section><p className="copyright">© {new Date().getFullYear()} {site.name}</p>
     </footer>
   );
 }
